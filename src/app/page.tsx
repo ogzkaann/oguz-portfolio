@@ -21,8 +21,11 @@ export default function Home() {
                     <h1 className="text-5xl font-bold mb-4">Hello, I&apos;m Oguz Kaan Dere</h1>
                     <p className="text-xl text-gray-600">FullStack Developer</p>
 
-                    <script type="application/ld+json">
-                        {`
+                    {/* Structured Data Script */}
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{
+                            __html: `
             {
               "@context": "https://schema.org",
               "@type": "Person",
@@ -34,8 +37,9 @@ export default function Home() {
                 "https://github.com/ogzkaann"
               ] 
             }
-          `}
-                    </script>
+          `,
+                        }}
+                    />
                 </div>
 
                 {/* About Me Section with descriptive headings */}
