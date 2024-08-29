@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4dddc29-1609-461e-afa6-d9adcff3ec0e" name="Changes" comment="website changed">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="b4dddc29-1609-461e-afa6-d9adcff3ec0e" name="Changes" comment="pnpm lock fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +73,7 @@
       <workItem from="1724952782948" duration="3903000" />
       <workItem from="1724956712390" duration="51000" />
       <workItem from="1724956806338" duration="49000" />
-      <workItem from="1724956898910" duration="334000" />
+      <workItem from="1724956898910" duration="945000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -104,7 +99,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724956676987</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="eslint fixed">
+      <option name="closed" value="true" />
+      <created>1724957367706</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724957367706</updated>
+    </task>
+    <task id="LOCAL-00005" summary="pnpm lock fixed">
+      <option name="closed" value="true" />
+      <created>1724957537233</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724957537233</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +126,8 @@
     <MESSAGE value="." />
     <MESSAGE value="eslint added" />
     <MESSAGE value="website changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="website changed" />
+    <MESSAGE value="eslint fixed" />
+    <MESSAGE value="pnpm lock fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="pnpm lock fixed" />
   </component>
 </project>
