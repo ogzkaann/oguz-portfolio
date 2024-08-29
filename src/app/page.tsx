@@ -11,7 +11,7 @@ export default function Home() {
                 <meta name="keywords"
                       content="Oguz Kaan Dere, Full Stack Developer, JavaScript, TypeScript, Angular, Vue.js, Node.js, Web Development"/>
                 <meta name="author" content="Oguz Kaan Dere"/>
-                <link rel="canonical" href="https://yourportfolio.com/"/>
+                <link rel="canonical" href="https://oguz-portfolio.vercel.app/"/>
             </Head>
 
             <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -28,7 +28,7 @@ export default function Home() {
               "@type": "Person",
               "name": "Oguz Kaan Dere",
               "jobTitle": "FullStack Developer",
-              "url": "https://your-portfolio-website.com", 
+              "url": "https://oguz-portfolio.vercel.app/", 
               "sameAs": [
                 "https://linkedin.com/in/oguz-kaan-dere",
                 "https://github.com/ogzkaann"
