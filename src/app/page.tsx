@@ -58,10 +58,11 @@ export default function Home() {
                 <meta property="twitter:image" content="/og-image.png"/>
             </Head>
 
-            <div className="flex mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24">
-                {/* Left Sidebar */}
-                {/* Header */}
-                <header className="sticky top-24 flex flex-col justify-between h-full">
+            {/* Main container adjusted for responsiveness */}
+            <div className="flex flex-col lg:flex-row mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24">
+
+                {/* Left Sidebar - Shown first on mobile, sticky on desktop */}
+                <header className="lg:sticky lg:top-24 flex flex-col justify-between lg:h-full lg:mr-8">
                     {/* Personal Info */}
                     <div>
                         <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
@@ -76,25 +77,25 @@ export default function Home() {
                             user-friendly design.
                         </p>
 
-                        {/* Navigation */}
+                        {/* Navigation - Hidden on small screens */}
                         <nav className="nav hidden lg:block" aria-label="In-page jump links">
                             <ul className="mt-16 space-y-2 w-max">
                                 {['about', 'experiences', 'projects'].map((section) => (
                                     <li key={section}>
                                         <a
                                             className={`group flex items-center py-3 ${activeSection === section ? 'text-white' : 'text-gray-500 dark:text-gray-400'
-                                                }`}
+                                            }`}
                                             href={`#${section}`}
                                         >
                                             <span
                                                 className={`nav-indicator mr-4 h-px w-8 transition-all ${activeSection === section
                                                     ? 'w-16 bg-gray-900 dark:bg-white'
                                                     : 'bg-gray-500 group-hover:w-16 group-hover:bg-gray-900 dark:bg-gray-800 group-focus-visible:w-16 group-focus-visible:bg-gray-900 dark:group-focus-visible:bg-gray-800 motion-reduce:transition-none'
-                                                    }`}
+                                                }`}
                                             ></span>
                                             <span
                                                 className={`nav-text text-xs font-bold uppercase tracking-widest ${activeSection === section ? 'text-white' : 'text-gray-500 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white group-focus-visible:text-gray-900 dark:group-focus-visible:text-white'
-                                                    }`}
+                                                }`}
                                             >
                                                 {section.charAt(0).toUpperCase() + section.slice(1)}
                                             </span>
@@ -106,7 +107,7 @@ export default function Home() {
                     </div>
 
                     {/* Social Media Links */}
-                    <div className="mt-36">
+                    <div className="mt-12 lg:mt-36">
                         <a
                             href="/Oguz_Kaan_Dere_CV.pdf"
                             target="_blank"
@@ -132,8 +133,8 @@ export default function Home() {
                     </div>
                 </header>
 
-                {/* Right Main Content */}
-                <main className="flex-1 overflow-y-auto p-6 ml-36">
+                {/* Right Main Content - Flex column layout for mobile, row layout for larger screens */}
+                <main className="flex-1 overflow-y-auto p-6 lg:ml-28">
                     {/* About Section */}
                     <section
                         id="about"
@@ -227,7 +228,6 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
-
 
                     {/* Projects Section */}
                     <section
