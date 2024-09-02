@@ -3,8 +3,9 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import ProjectCard from "@/components/ProjectCard";
-import ExperienceCard from "@/components/ExperienceCard";
+import dynamic from "next/dynamic";
+const ExperienceCard = dynamic(() => import('@/components/ExperienceCard'), { ssr: false });
+const ProjectCard = dynamic(() => import('@/components/ProjectCard'), { ssr: false });
 
 export default function Home() {
     const [activeSection, setActiveSection] = useState("");
