@@ -32,27 +32,27 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Oguz Kaan Dere | FullStack Developer</title>
+                <title>Oguz Kaan Dere | Full Stack Developer, Software Developer, React Developer</title>
                 <meta
                     name="description"
-                    content="Oguz Kaan Dere is a Full Stack Developer specializing in modern web technologies. Explore his projects and get in touch!"
+                    content="Oguz Kaan Dere is a Full Stack Developer specializing in modern web technologies like JavaScript, React, Node.js, and more. Explore his projects, experience, and get in touch for freelance or full-time opportunities."
                 />
                 <meta
                     name="keywords"
-                    content="Oguz Kaan Dere, Full Stack Developer, JavaScript, TypeScript, Angular, Vue.js, Node.js, Web Development"
+                    content="Full Stack Developer, Software Developer, React Developer, JavaScript, TypeScript, Angular, Vue.js, Node.js, Freelance Developer, Oguz Kaan Dere"
                 />
                 <meta name="author" content="Oguz Kaan Dere"/>
                 <link rel="canonical" href="https://oguz-portfolio.vercel.app/"/>
 
                 {/* Open Graph and Twitter meta tags */}
-                <meta property="og:title" content="Oguz Kaan Dere | FullStack Developer"/>
+                <meta property="og:title" content="Oguz Kaan Dere | Full Stack Developer, Software Developer, React Developer" />
                 <meta property="og:description"
                       content="Oguz Kaan Dere is a Full Stack Developer specializing in modern web technologies. Explore his projects and get in touch!"/>
                 <meta property="og:url" content="https://oguz-portfolio.vercel.app/"/>
                 <meta property="og:image" content="/og-image.png"/>
                 <meta property="og:type" content="website"/>
                 <meta name="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:title" content="Oguz Kaan Dere | FullStack Developer"/>
+                <meta property="twitter:title" content="Oguz Kaan Dere | Full Stack Developer, Software Developer, React Developer" />
                 <meta property="twitter:description"
                       content="Oguz Kaan Dere is a Full Stack Developer specializing in modern web technologies. Explore his projects and get in touch!"/>
                 <meta property="twitter:image" content="/og-image.png"/>
@@ -65,16 +65,14 @@ export default function Home() {
                 <header className="lg:sticky lg:top-24 flex flex-col justify-between lg:h-full lg:mr-8">
                     {/* Personal Info */}
                     <div className="text-center lg:text-left">
-                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
+                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                             Oguz Kaan Dere
                         </h1>
-                        <h2 className="mt-3 text-lg font-medium tracking-tight text-gray-700 dark:text-gray-300 sm:text-xl">
-                            FullStack Developer
+                        <h2 className="mt-3 text-lg font-medium tracking-tight text-gray-700 dark:text-gray-300 sm:text-l">
+                            Mid-Level Full Stack Developer
                         </h2>
                         <p className="mt-4 lg:max-w-xs leading-normal text-gray-600 dark:text-gray-400">
-                            I create scalable, high-performance applications that combine robust functionality with
-                            clean,
-                            user-friendly design.
+                            I create scalable, high-performance applications using modern technologies like JavaScript, React, Node.js, and more.
                         </p>
 
                         {/* Navigation - Hidden on small screens */}
@@ -116,15 +114,15 @@ export default function Home() {
                         >
                             Download CV
                         </a>
-                        <ul className="flex space-x-4">
+                        <ul className="flex justify-center space-x-4">
                             <li>
-                                <a href="https://github.com/ogzkaann" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/ogzkaann" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                     <Image src="/github.svg" alt="GitHub" width={24} height={24}/>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://linkedin.com/in/oguz-kaan-dere" target="_blank"
-                                   rel="noopener noreferrer">
+                                   rel="noopener noreferrer" aria-label="LinkedIn">
                                     <Image src="/linkedin.svg" alt="LinkedIn" width={24} height={24}/>
                                 </a>
                             </li>
@@ -134,7 +132,7 @@ export default function Home() {
                 </header>
 
                 {/* Right Main Content - Flex column layout for mobile, row layout for larger screens */}
-                <main className="flex-1 overflow-y-auto p-6 lg:ml-28">
+                <main className="flex-1 overflow-y-auto p-6 lg:ml-28 lg:overflow-y-visible">
                     {/* About Section */}
                     <section
                         id="about"
@@ -238,7 +236,7 @@ export default function Home() {
                         <div className="text-center lg:text-left">
                             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Projects</h3>
                             <div
-                                className="mt-8 flex overflow-x-auto space-x-4 py-4 scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-100">
+                                className="mt-8 flex overflow-x-auto space-x-4 py-4 scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-100 flex-nowrap">
                                 <ProjectCard
                                     title="Job Application Tracker"
                                     description="Effortlessly track and manage all your job applications in one powerful and intuitive platform."
@@ -247,21 +245,13 @@ export default function Home() {
                                     backendLink="https://github.com/ogzkaann/job-application-tracker-backend"
                                 />
                                 <ProjectCard
-                                    title="Another Project"
-                                    description="Description for another project."
+                                    title="Custom iBeacon Notification App"
+                                    description="Developed a custom Android application using Java and Android Studio that detects nearby iBeacons and sends personalized notifications based on the detected beacon. The app was designed for a specific client and cannot be shared publicly due to confidentiality agreements."
                                     demoLink="#"
-                                    frontendLink="https://github.com/example/frontend"
-                                    backendLink="https://github.com/example/backend"
+                                    frontendLink="#"
+                                    backendLink="#"
                                 />
-                                {/* Add more ProjectCard components here */}
                             </div>
-                            <button
-                                className="mt-6 inline-block rounded bg-gray-900 px-6 py-2 text-sm font-semibold text-white hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300"
-                                onClick={() => {/* Show all projects logic */
-                                }}
-                            >
-                                Show All
-                            </button>
                         </div>
                     </section>
 
