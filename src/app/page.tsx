@@ -64,14 +64,14 @@ export default function Home() {
                 {/* Left Sidebar - Shown first on mobile, sticky on desktop */}
                 <header className="lg:sticky lg:top-24 flex flex-col justify-between lg:h-full lg:mr-8">
                     {/* Personal Info */}
-                    <div>
+                    <div className="text-center lg:text-left">
                         <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
                             Oguz Kaan Dere
                         </h1>
                         <h2 className="mt-3 text-lg font-medium tracking-tight text-gray-700 dark:text-gray-300 sm:text-xl">
                             FullStack Developer
                         </h2>
-                        <p className="mt-4 max-w-xs leading-normal text-gray-600 dark:text-gray-400">
+                        <p className="mt-4 lg:max-w-xs leading-normal text-gray-600 dark:text-gray-400">
                             I create scalable, high-performance applications that combine robust functionality with
                             clean,
                             user-friendly design.
@@ -107,7 +107,7 @@ export default function Home() {
                     </div>
 
                     {/* Social Media Links */}
-                    <div className="mt-12 lg:mt-36">
+                    <div className="text-center mt-12 lg:mt-36">
                         <a
                             href="/Oguz_Kaan_Dere_CV.pdf"
                             target="_blank"
@@ -201,7 +201,7 @@ export default function Home() {
                                         "Achieved 90% code coverage by writing comprehensive unit tests, boosting bug detection efficiency by 50%.",
                                         "Developed a Contract Manager app using Vue.js, Node.js, and PostgreSQL, enhancing backend efficiency by 40% and reducing response times."
                                     ]}
-                                    technologies={["Angular", "C#", "Jasmine", "Vue.js", "Typescript", "HTML", "Node.js", "Fastify", "PostgreSQL", "GraphQL", "Docker", "Kubernetes", "AWS Lambda", "Redis", "Tailwind CSS"]}
+                                    technologies={["Angular", "C#", "Jasmine", "Vue.js", "Typescript", "HTML", "Node.js", "Fastify", "PostgreSQL", "Tailwind CSS"]}
                                 />
                                 <ExperienceCard
                                     title="Full Stack Developer"
@@ -212,7 +212,7 @@ export default function Home() {
                                         "Created reusable modules, cutting future development time by 20% and improving platform consistency.",
                                         "Improved application performance by 15%, reducing load times and increasing user satisfaction."
                                     ]}
-                                    technologies={["Java", "ExtJS", "Javascript", "HTML", "Oracle Database", "Spring Boot", "Kafka", "Kubernetes", "AWS RDS", "Microservices Architecture"]}
+                                    technologies={["Java", "ExtJS", "Javascript", "HTML", "Oracle Database"]}
                                 />
                                 <ExperienceCard
                                     title="Game Developer"
@@ -223,7 +223,7 @@ export default function Home() {
                                         "Enhanced user engagement by 15% and reduced loading times by 30%, driving higher retention rates.",
                                         "Managed end-to-end development and design for 3 mobile games, achieving a 95% cross-device compatibility."
                                     ]}
-                                    technologies={["Unity 3D", "Unity 2D", "C#", "Blender", "Adobe Photoshop", "Photon Unity Networking (PUN)", "AWS GameLift", "PlayFab", "Unity Addressables", "Git", "DevOps (CI/CD pipelines with GitHub Actions)"]}
+                                    technologies={["Unity 3D", "Unity 2D", "C#", "Blender", "Adobe Photoshop", "Git"]}
                                 />
                             </div>
                         </div>
