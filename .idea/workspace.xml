@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4dddc29-1609-461e-afa6-d9adcff3ec0e" name="Changes" comment="minor updates">
+    <list default="true" id="b4dddc29-1609-461e-afa6-d9adcff3ec0e" name="Changes" comment="performance updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +44,15 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.google.cloudcode.ide_session_index": "20240902_0000",
+    "com.google.cloudcode.ide_session_index": "20241027_0001",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/ogzka/Desktop/Projects/my-portfolio/public",
+    "last_opened_file_path": "C:/Users/ogzka/Desktop/Projects/vehicle-campaigns",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Users\\ogzka\\Desktop\\Projects\\my-portfolio\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -90,6 +90,14 @@
       <workItem from="1725120664635" duration="54000" />
       <workItem from="1725120765113" duration="16138000" />
       <workItem from="1725254486532" duration="11364000" />
+      <workItem from="1725601247223" duration="257000" />
+      <workItem from="1725730088606" duration="31000" />
+      <workItem from="1725993494250" duration="16000" />
+      <workItem from="1726028284890" duration="63000" />
+      <workItem from="1728628587941" duration="227000" />
+      <workItem from="1728630010041" duration="334000" />
+      <workItem from="1730059036274" duration="692000" />
+      <workItem from="1730060320499" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
