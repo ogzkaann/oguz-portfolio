@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Oguz Kaan Dere Portfolio
 
-## Getting Started
+Personal portfolio website for Oguz Kaan Dere, focused on full-stack software experience, biomedical engineering background, and AI-assisted product projects.
 
-First, run the development server:
+Live demo: https://oguzdere.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## What This Site Is
+
+This is a compact, dark, long-form portfolio built with a sticky intro panel and project-focused content. It presents:
+
+- Professional software experience across enterprise frontend, hospital software, and game prototypes
+- Current AI-native product direction: local-first apps, RAG, OCR, BYOK AI, and document workflows
+- Selected portfolio projects with honest status badges: `Live`, `In progress`, `Concept`, and `Portfolio`
+- Product thinking principles behind the work
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- React
+- Vercel deployment
+
+## Content Structure
+
+Portfolio content is separated from the page component:
+
+- `src/data/projects.ts` - project cards, status badges, links, highlights, tech stacks
+- `src/data/experience.ts` - professional timeline
+- `src/data/skills.ts` - skill clusters and product-thinking bullets
+- `src/components/ProjectCard.tsx` - reusable project presentation
+- `src/components/ExperienceCard.tsx` - reusable timeline card
+- `src/components/SkillGroup.tsx` - compact skill groups
+- `src/components/SectionHeading.tsx` - consistent section titles
+
+## Adding Or Editing Projects
+
+Edit `src/data/projects.ts` and add a project object:
+
+```ts
+{
+  title: "Project Name",
+  status: "Live",
+  liveUrl: "https://example.com",
+  githubUrl: "https://github.com/example/repo",
+  description: "Short, honest product description.",
+  highlights: ["Local-first", "Citations", "BYOK AI"],
+  designed: ["What I designed or modeled"],
+  tech: ["React", "TypeScript", "Tailwind"]
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Leave `liveUrl` or `githubUrl` out when a project does not have that link. The buttons are hidden automatically.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Adding A Profile Photo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Add a square or portrait image at:
 
-## Learn More
+```txt
+public/profile-oguz.jpg
+```
 
-To learn more about Next.js, take a look at the following resources:
+The site will use it automatically. If the file is missing, it shows an initials avatar fallback.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Running Locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm install
+npm run dev
+```
 
-## Deploy on Vercel
+Open http://localhost:3000.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Production Build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm run build
+```
+
+## Deployment
+
+The project is ready for Vercel. Connect the GitHub repository, keep the default Next.js build settings, and deploy.
+
+## Future Improvements
+
+- Add a real profile photo and Open Graph image
+- Add richer project screenshots for live products
+- Add a concise CV/contact section or contact form
+- Add optional case-study pages for the two live AI-assisted projects
