@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <>
       <SplashCursor />
-      <div className="relative min-h-screen overflow-x-hidden text-slate-100">
+      <div className="relative min-h-screen overflow-x-clip text-slate-100">
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <div className="absolute left-[-12rem] top-20 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
           <div className="absolute right-[-10rem] top-[32rem] h-[28rem] w-[28rem] rounded-full bg-fuchsia-500/10 blur-3xl" />
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 mx-auto flex min-h-screen max-w-screen-xl flex-col px-6 py-10 md:px-12 md:py-16 lg:flex-row lg:px-20 lg:py-24">
-          <header className="lg:sticky lg:top-24 lg:flex lg:h-[calc(100vh-12rem)] lg:w-[38%] lg:max-w-md lg:flex-col lg:justify-between lg:pr-12">
+          <header className="lg:sticky lg:top-10 lg:flex lg:max-h-[calc(100vh-5rem)] lg:min-h-[calc(100vh-5rem)] lg:w-[38%] lg:max-w-md lg:flex-col lg:justify-between lg:self-start lg:overflow-y-auto lg:pr-12">
             <div>
               <ProfileAvatar />
 
