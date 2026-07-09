@@ -1,17 +1,27 @@
-import type { Project, ProjectStatus } from "@/data/projects";
+import type { Project, ProjectStatus } from "@/types/portfolio";
 
 interface ProjectCardProps {
   project: Project;
+  designedHeading: string;
+  liveDemoLabel: string;
+  githubLabel: string;
+  statusLabels: Record<ProjectStatus, string>;
 }
 
 const statusStyles: Record<ProjectStatus, string> = {
-  Live: "border-emerald-400/30 bg-emerald-400/10 text-emerald-200",
-  "In progress": "border-amber-300/30 bg-amber-300/10 text-amber-100",
-  Concept: "border-sky-300/30 bg-sky-300/10 text-sky-100",
-  Portfolio: "border-fuchsia-300/30 bg-fuchsia-300/10 text-fuchsia-100",
+  live: "border-emerald-400/30 bg-emerald-400/10 text-emerald-200",
+  inProgress: "border-amber-300/30 bg-amber-300/10 text-amber-100",
+  concept: "border-sky-300/30 bg-sky-300/10 text-sky-100",
+  portfolio: "border-fuchsia-300/30 bg-fuchsia-300/10 text-fuchsia-100",
 };
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({
+  project,
+  designedHeading,
+  liveDemoLabel,
+  githubLabel,
+  statusLabels,
+}: ProjectCardProps) {
   return (
     <article className="group relative flex h-full flex-col rounded-lg border border-white/10 bg-slate-900/70 p-5 shadow-xl shadow-black/20 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-slate-900/90">
       <div className="absolute inset-x-5 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -23,7 +33,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <span
           className={`shrink-0 rounded-full border px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] ${statusStyles[project.status]}`}
         >
-          {project.status}
+          {statusLabels[project.status]}
         </span>
       </div>
 
@@ -31,7 +41,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       <div className="mt-5">
         <h5 className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-          What I designed
+          {designedHeading}
         </h5>
         <ul className="mt-3 space-y-2">
           {project.designed.map((item) => (
@@ -73,7 +83,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             rel="noopener noreferrer"
             className="rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:from-cyan-300 hover:to-blue-400"
           >
-            Live Demo
+            {liveDemoLabel}
           </a>
         ) : null}
         {project.githubUrl ? (
@@ -83,7 +93,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             rel="noopener noreferrer"
             className="rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:border-white/20 hover:bg-white/10"
           >
-            GitHub
+            {githubLabel}
           </a>
         ) : null}
       </div>

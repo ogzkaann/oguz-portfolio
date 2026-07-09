@@ -1,4 +1,4 @@
-import type { SkillGroup as SkillGroupType } from "@/data/skills";
+import type { SkillGroup as SkillGroupType } from "@/types/portfolio";
 
 interface SkillGroupProps {
   group: SkillGroupType;

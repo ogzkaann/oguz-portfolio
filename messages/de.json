@@ -1,0 +1,181 @@
+{
+  "Metadata": {
+    "title": "Oguz Kaan Dere — AI-orientierter Full-Stack-Entwickler",
+    "description": "Portfolio von Oğuz Kaan Dere, einem Full-Stack-Entwickler mit Hintergrund in der Biomedizintechnik, der KI-unterstützte, lokal-first Webprodukte, RAG-Tools, OCR-Workflows und praktische Entscheidungsunterstützungs-Apps entwickelt.",
+    "openGraphDescription": "KI-unterstützte Produktprojekte, Full-Stack-Softwareerfahrung, Dokumenten-Workflows, RAG-Tools, OCR-Workflows und praktische Entscheidungsunterstützungs-Apps."
+  },
+  "Home": {
+    "hero": {
+      "title": "Oguz Kaan Dere",
+      "subtitle": "KI-orientierter Full-Stack-Entwickler · produktorientierter Entwickler · Hintergrund in der Biomedizintechnik",
+      "intro": "Ich entwickle praxisnahe Webprodukte, die sauberes Frontend-Engineering, Dokumenten-Workflows, KI-unterstützte Analyse und domänenspezifische Entscheidungssysteme verbinden.",
+      "transitionNote": "Ich lebe derzeit in Deutschland, verbessere meine Deutschkenntnisse und entwickle gezielte KI- und Produkt-Portfolio-Projekte, während ich nach qualifizierten Software- und Produktrollen suche."
+    },
+    "buttons": {
+      "viewProjects": "Projekte ansehen",
+      "downloadCv": "Lebenslauf",
+      "github": "GitHub",
+      "linkedIn": "LinkedIn",
+      "liveDemo": "Live-Demo"
+    },
+    "navigation": [
+      { "id": "about", "label": "Profil" },
+      { "id": "product-thinking", "label": "Produktdenken" },
+      { "id": "experience", "label": "Erfahrung" },
+      { "id": "projects", "label": "Projekte" },
+      { "id": "skills", "label": "Skills" }
+    ],
+    "sections": {
+      "about": {
+        "title": "Profil",
+        "ariaLabel": "Profil",
+        "paragraphs": [
+          "Ich bin Softwareentwickler mit Hintergrund in der Biomedizintechnik, Enterprise-Web-Erfahrung und praktischer Erfahrung in Krankenhaussoftware. Meine berufliche Arbeit umfasst Angular/TypeScript-Frontend-Systeme, Java/JavaScript-Full-Stack-Aufgaben, datenbankgestützte Funktionen und produktionsnahe Fehlerbehebung.",
+          "In letzter Zeit liegt mein Schwerpunkt auf KI-unterstützter Produktentwicklung: lokal-first Apps, RAG, OCR, Dokumenten-Workflows, Entscheidungsunterstützungs-Interfaces und MVPs, die nicht nur gut demonstrierbar, sondern auch klar erklärbar sind.",
+          "Während meines Übergangs nach Deutschland habe ich meine Deutschkenntnisse ausgebaut, mich auf den lokalen Software-Arbeitsmarkt ausgerichtet und fokussierte Portfolio-Projekte rund um praktische Problemstellungen entwickelt. Spiele, Systeme und Werkzeuge mit Persönlichkeit interessieren mich weiterhin, aber der Schwerpunkt liegt auf nützlicher Software."
+        ]
+      },
+      "productThinking": {
+        "title": "Produktdenken",
+        "ariaLabel": "Produktdenken",
+        "items": [
+          "Ich übersetze vage reale Probleme in klare Datenstrukturen, Regeln und Review-Abläufe.",
+          "Ich begrenze KI-Systeme bewusst, statt ihnen unkontrolliert Raum für Halluzinationen zu geben.",
+          "Ich trenne Quellensuche, Nutzerdaten, KI-Erklärung und die finale Entscheidung des Nutzers.",
+          "Bei sensiblen Dokumenten bevorzuge ich lokal-first und BYOK-Muster.",
+          "Ich baue MVPs, die demonstrierbar, deploybar und nachvollziehbar sind."
+        ]
+      },
+      "experience": {
+        "title": "Erfahrung",
+        "ariaLabel": "Berufserfahrung"
+      },
+      "projects": {
+        "title": "Projekte",
+        "ariaLabel": "Ausgewählte Projekte"
+      },
+      "skills": {
+        "title": "Skills",
+        "ariaLabel": "Skills"
+      }
+    },
+    "projectCard": {
+      "designedHeading": "Was ich konzipiert habe"
+    },
+    "statuses": {
+      "live": "Live",
+      "inProgress": "In Arbeit",
+      "concept": "Konzept",
+      "portfolio": "Portfolio"
+    },
+    "experiences": [
+      {
+        "title": "Unabhängiger KI-Produktentwickler / Portfolio-Sprint",
+        "company": "Eigenständig",
+        "date": "2025-heute",
+        "responsibilities": [
+          "Entwicklung lokal-first KI-unterstützter Portfolio-Produkte mit React/TypeScript, RAG, OCR, BYOK AI, PDF-/Dokumentenextraktion sowie Vercel/GitHub-Deployment.",
+          "Fokus auf praktische Entscheidungsunterstützungs-Tools: Aufenthalts- und Karrierepfad-Analyse, Zulassungs-Fit-Prüfung, private Dokumentenassistenten und KI-gestützte Mini-Games."
+        ],
+        "technologies": ["React", "TypeScript", "Vite", "Next.js", "Tailwind", "IndexedDB", "pdfjs", "Tesseract.js", "RAG", "BYOK AI", "Vercel"],
+        "note": "Während meines Übergangs nach Deutschland habe ich mich auf den Ausbau meiner Deutschkenntnisse, die Ausrichtung auf den Arbeitsmarkt und gezielte KI-unterstützte Portfolio-Projekte konzentriert."
+      },
+      {
+        "title": "Full Stack / Frontend Developer",
+        "company": "Ekinoks Software",
+        "date": "Dez. 2022-Dez. 2024",
+        "responsibilities": [
+          "Entwicklung von Enterprise-Frontend-Funktionen mit Angular/TypeScript über komplexe UI-Module, Formulare, State und API-Integration hinweg.",
+          "Zusammenarbeit in einem professionellen Softwareteam an wartbarer Frontend-Umsetzung, Fehlerbehebung und iterativen Produktverbesserungen.",
+          "Beitrag zur Interface-Qualität in datenintensiven Geschäftsprozessen, bei denen Klarheit und Zuverlässigkeit wichtig waren."
+        ],
+        "technologies": ["Angular", "TypeScript", "RxJS", "Kendo UI", "JavaScript", "REST", "Git"]
+      },
+      {
+        "title": "Full Stack Developer",
+        "company": "Fonet Software",
+        "date": "Mai 2021-Nov. 2022",
+        "responsibilities": [
+          "Entwicklung von Funktionen für ein Krankenhausinformationssystem in einer datenbankgestützten Enterprise-Umgebung.",
+          "Arbeit an Java/JavaScript-Full-Stack-Aufgaben, Service-Entwicklung, Fehlerbehebung und produktionsorientierter Wartung.",
+          "Praktische Erfahrung mit Healthcare-Software-Workflows und entsprechenden Anforderungen an Zuverlässigkeit."
+        ],
+        "technologies": ["Java", "JavaScript", "ExtJS", "SQL/Oracle", "Git"]
+      },
+      {
+        "title": "Game Developer / Incubation",
+        "company": "ATOM / METU",
+        "date": "2019-2020",
+        "responsibilities": [
+          "Entwicklung von Unity-Prototypen und Gameplay-Systemen im Rahmen von Game Jams und Inkubationsarbeit.",
+          "Erprobung von Visual Design, Interaktionsloops und schlanken Produktionsabläufen für spielbare Konzepte."
+        ],
+        "technologies": ["Unity", "C#", "Blender", "Photoshop", "Git"]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Germany Path Finder",
+        "status": "live",
+        "liveUrl": "https://germany-path-finder.vercel.app/",
+        "githubUrl": "https://github.com/ogzkaann/germany-path-finder",
+        "description": "Lokal-first RAG-Tool zur Entscheidungsunterstützung für Aufenthalts- und Karrierepfade in Deutschland, basierend auf kuratierten offiziellen PDFs, BYOK AI, Zitaten und konservativen, quellengebundenen Antworten.",
+        "highlights": ["Lokal-first RAG", "Offizielles Quellenmanifest", "PDF-Ingestion", "BYOK Gemini/OpenAI-kompatible AI", "Zitate und Unsicherheitsbehandlung", "Keine Rechtsberatung"],
+        "designed": ["Quellengebundener Antwortfluss", "Konservativer Pfadvergleich", "Private Dokumenten- und API-Key-Verarbeitung"],
+        "tech": ["Vite", "React", "TypeScript", "Tailwind", "IndexedDB/Dexie", "pdfjs", "RAG", "BYOK AI", "Vercel"]
+      },
+      {
+        "title": "Admission Fit Checker",
+        "status": "live",
+        "liveUrl": "https://admission-fit-checker.vercel.app/",
+        "githubUrl": "https://github.com/ogzkaann/admission-fit-checker",
+        "description": "KI-unterstützter Admission-Fit-Checker, der akademische Profile aus PDFs/Bildern extrahiert, OCR nutzt, Profildaten mit Studienprogrammanforderungen vergleicht und konservative Fit-Einschätzungen liefert.",
+        "highlights": ["Transcript-/Profilextraktion", "OCR mit Tesseract.js", "Academic-Fit-Engine", "Programmbibliothek", "BYOK AI", "Lokal-first Speicherung"],
+        "designed": ["PDF-/Bild-Extraktionsworkflow", "Fit-Einschätzungsmodell", "Prüfbare Profildaten vor der KI-Erklärung"],
+        "tech": ["Vite", "React", "TypeScript", "Tailwind", "IndexedDB/Dexie", "pdfjs", "Tesseract.js", "Zod", "Vercel"]
+      },
+      {
+        "title": "Grup Kartı / WhatsApp Group Analyzer",
+        "status": "inProgress",
+        "description": "Datenschutzbewusster WhatsApp-Gruppenanalysator, der einen humorvollen Gruppenbericht erstellt, ohne private Nachrichteninhalte zu zitieren.",
+        "highlights": ["Nur Verhaltensanalyse", "Privacy-first Regeln", "Keine privaten Inhaltszitate", "Format für soziales Teilen"],
+        "designed": ["Lokale Parsing-Regeln", "Datenschutzgrenzen für Zusammenfassungen", "Teilbare Berichtstruktur"],
+        "tech": ["React", "TypeScript", "Lokales Parsing", "KI-unterstützte Zusammenfassung"]
+      },
+      {
+        "title": "Local Company Document Assistant",
+        "status": "concept",
+        "description": "Lokal-first Dokumentenassistent für kleine Unternehmen, der Fragen ausschließlich aus Unternehmens-PDFs, Handbüchern und Katalogen beantwortet.",
+        "highlights": ["Lokale/private Dokumenten-QA", "Quellenzitate", "Keine Cloud-Datenbank", "SMB-orientierter Use Case"],
+        "designed": ["Antwortgrenzen nur auf Basis von Dokumenten", "Onboarding-Pfad für kleine Unternehmen", "Quellenzitate und Ablehnungsverhalten"],
+        "tech": ["React/TypeScript", "RAG", "Lokales LLM/Ollama geplant", "pdfjs"]
+      },
+      {
+        "title": "Beni İşe Al - AI Persuasion Game",
+        "status": "concept",
+        "description": "Ein humorvolles KI-Dialogspiel, in dem der Spieler versucht, einen schwierigen KI-Chef über vorgeschlagene oder editierbare Antworten und eine Überzeugungsanzeige zur Einstellung zu bewegen.",
+        "highlights": ["KI-Dialog-Game-Loop", "Kontrollierte Auswahl + editierbare Antworten", "Überzeugungsscore", "Mehrere Enden"],
+        "designed": ["Game-State-Loop", "Scoring- und Ending-Modell", "Editierbare Antwortinteraktion"],
+        "tech": ["React", "TypeScript", "Leichtgewichtige AI API", "Game-State-Engine"]
+      },
+      {
+        "title": "Portfolio Website",
+        "status": "portfolio",
+        "liveUrl": "https://oguzdere.vercel.app/",
+        "githubUrl": "https://github.com/ogzkaann/oguz-portfolio",
+        "description": "Persönliche Portfolio-Website, die meinen Software-Hintergrund, KI-unterstützte Produktprojekte und ausgewählte Arbeiten präsentiert.",
+        "highlights": ["Sticky persönliches Intro-Panel", "Kompaktes Long-Form-Layout", "Projektstatus-System", "Dunkle visuelle Identität"],
+        "designed": ["Content-Architektur", "Wiederverwendbares Portfolio-Datenmodell", "Responsive Projekt- und Erfahrungskarten"],
+        "tech": ["Next.js", "TypeScript", "Tailwind", "Vercel"]
+      }
+    ],
+    "skillGroups": [
+      { "title": "Frontend", "skills": ["React", "Next.js", "Angular", "TypeScript", "Tailwind"] },
+      { "title": "Backend/Daten", "skills": ["Java", "Node.js", "REST", "SQL", "PostgreSQL", "Oracle"] },
+      { "title": "KI/Produkt", "skills": ["RAG", "OCR", "BYOK AI", "Prompt-/Systemdesign", "Dokumentenextraktion"] },
+      { "title": "Tools", "skills": ["Git", "Vercel", "GitHub", "Figma/Designgespür", "Unity"] },
+      { "title": "Domain", "skills": ["Biomedizintechnik", "Krankenhaussoftware", "Interesse an MedTech"] }
+    ],
+    "footer": "© 2026 Oguz Kaan Dere. Entwickelt mit Next.js, TypeScript und Tailwind."
+  }
+}
