@@ -1,14 +1,14 @@
 {
   "Metadata": {
     "title": "Oguz Kaan Dere — AI-native Full-Stack Developer",
-    "description": "Portfolio of Oğuz Kaan Dere, a full-stack developer with biomedical engineering background building AI-assisted, local-first web products, RAG tools, OCR workflows and practical decision-support apps.",
-    "openGraphDescription": "AI-assisted product projects, full-stack software experience, document workflows, RAG tools, OCR workflows and practical decision-support apps."
+    "description": "Portfolio of Oğuz Kaan Dere, a full-stack developer with biomedical engineering background building AI-assisted, local-first web products, RAG tools, OCR workflows, controlled AI interaction systems and practical decision-support apps.",
+    "openGraphDescription": "AI-assisted product projects, full-stack software experience, document workflows, controlled AI dialogue systems, RAG tools, OCR workflows and practical decision-support apps."
   },
   "Home": {
     "hero": {
       "title": "Oguz Kaan Dere",
       "subtitle": "AI-native Full-Stack Developer · Product-minded Builder · Biomedical Engineering Background",
-      "intro": "I build practical web products that combine clean frontend engineering, document workflows, AI-assisted analysis, and domain-specific decision systems.",
+      "intro": "I build practical web products that combine clean frontend engineering, document workflows, AI-assisted analysis, controlled AI interactions, and domain-specific decision systems.",
       "transitionNote": "Currently in Germany, improving German and building targeted AI/product portfolio projects while looking for qualified software and product roles."
     },
     "buttons": {
@@ -31,7 +31,7 @@
         "ariaLabel": "About",
         "paragraphs": [
           "I am a software developer with a Biomedical Engineering background, enterprise web experience, and hands-on hospital software exposure. My professional work has included Angular/TypeScript frontend systems, Java/JavaScript full-stack tasks, database-backed features, and production bug fixing.",
-          "Recently, my focus has shifted toward AI-assisted product development: local-first apps, RAG, OCR, document workflows, decision-support interfaces, and MVPs that can be explained clearly instead of just demoed visually.",
+          "Recently, my focus has shifted toward AI-assisted product development: local-first apps, RAG, OCR, document workflows, controlled AI interaction loops, decision-support interfaces, and MVPs that can be explained clearly instead of just demoed visually.",
           "During my transition to Germany, I have been improving my German, aligning with the local software job market, and building focused portfolio products around practical problems. I still like games, systems, and tools with a bit of personality, but the center of gravity is useful software."
         ]
       },
@@ -41,7 +41,7 @@
         "items": [
           "I model vague real-world problems into explicit data structures, rules, and review flows.",
           "I constrain AI instead of letting it hallucinate.",
-          "I separate source retrieval, user data, AI explanation, and final user decision.",
+          "I separate source retrieval, user data, AI explanation, local scoring rules, and final user decision.",
           "I prefer local-first and BYOK patterns when user documents are sensitive.",
           "I build MVPs that are demoable, deployable, and explainable."
         ]
@@ -74,8 +74,8 @@
         "company": "Self-directed",
         "date": "2025-Present",
         "responsibilities": [
-          "Building local-first AI-assisted portfolio products with React/TypeScript, RAG, OCR, BYOK AI, PDF/document extraction, and Vercel/GitHub deployment.",
-          "Focused on practical decision-support tools: immigration/career path analysis, admission fit checking, private document assistants, and AI-driven mini-games."
+          "Building local-first AI-assisted portfolio products with React/TypeScript, RAG, OCR, BYOK AI, PDF/document extraction, deterministic interaction systems, and Vercel/GitHub deployment.",
+          "Focused on practical decision-support tools: immigration/career path analysis, admission fit checking, private document assistants, and controlled AI dialogue/game systems."
         ],
         "technologies": ["React", "TypeScript", "Vite", "Next.js", "Tailwind", "IndexedDB", "pdfjs", "Tesseract.js", "RAG", "BYOK AI", "Vercel"],
         "note": "During my transition to Germany, I focused on German language development, job-market alignment, and building focused AI-assisted portfolio products."
@@ -115,18 +115,23 @@
     ],
     "projects": [
       {
-        "title": "Germany Path Finder",
+        "title": "Schleimer",
         "status": "live",
-        "liveUrl": "https://germany-path-finder.vercel.app/",
-        "githubUrl": "https://github.com/ogzkaann/germany-path-finder",
-        "description": "Local-first RAG decision-support tool for Germany residence and career path planning using owner-curated official PDFs, BYOK AI, citations, and conservative source-bound answers.",
-        "highlights": ["Local-first RAG", "Official source manifest", "PDF ingestion", "BYOK Gemini/OpenAI-compatible AI", "Citations and uncertainty handling", "No legal-advice overclaim"],
-        "designed": ["Source-bound answer flow", "Conservative path comparison", "Private document and API-key handling"],
-        "tech": ["Vite", "React", "TypeScript", "Tailwind", "IndexedDB/Dexie", "pdfjs", "RAG", "BYOK AI", "Vercel"]
+        "icon": "game",
+        "accent": "orange",
+        "featured": true,
+        "liveUrl": "https://schleimer.vercel.app/",
+        "githubUrl": "https://github.com/ogzkaann/schleimer",
+        "description": "Controlled AI dialogue game where the player tries to survive a sarcastic job interview by balancing Hire Chance, Boss Patience, and Schleim Level. The LLM only writes boss dialogue; scoring, endings, hidden skill tags, and game state are handled by a deterministic local engine.",
+        "highlights": ["Deterministic scoring engine", "BYOK Gemini boss dialogue", "Smart mock fallback", "Hidden skill tags", "Multi-ending game loop", "Token-efficient AI prompts"],
+        "designed": ["Controlled AI interaction loop", "Local game-state and scoring rules", "Mock-first architecture with optional AI dialogue"],
+        "tech": ["Vite", "React", "TypeScript", "Tailwind", "Zustand", "framer-motion", "Gemini API", "Vercel"]
       },
       {
         "title": "Admission Fit Checker",
         "status": "live",
+        "icon": "university",
+        "accent": "blue",
         "liveUrl": "https://admission-fit-checker.vercel.app/",
         "githubUrl": "https://github.com/ogzkaann/admission-fit-checker",
         "description": "AI-assisted admission fit checker that extracts academic profiles from PDFs/images, uses OCR, compares profile data with university program requirements, and returns conservative fit verdicts.",
@@ -135,8 +140,22 @@
         "tech": ["Vite", "React", "TypeScript", "Tailwind", "IndexedDB/Dexie", "pdfjs", "Tesseract.js", "Zod", "Vercel"]
       },
       {
+        "title": "Germany Path Finder",
+        "status": "live",
+        "icon": "germany",
+        "accent": "emerald",
+        "liveUrl": "https://germany-path-finder.vercel.app/",
+        "githubUrl": "https://github.com/ogzkaann/germany-path-finder",
+        "description": "Local-first RAG decision-support tool for Germany residence and career path planning using owner-curated official PDFs, BYOK AI, citations, and conservative source-bound answers.",
+        "highlights": ["Local-first RAG", "Official source manifest", "PDF ingestion", "BYOK Gemini/OpenAI-compatible AI", "Citations and uncertainty handling", "No legal-advice overclaim"],
+        "designed": ["Source-bound answer flow", "Conservative path comparison", "Private document and API-key handling"],
+        "tech": ["Vite", "React", "TypeScript", "Tailwind", "IndexedDB/Dexie", "pdfjs", "RAG", "BYOK AI", "Vercel"]
+      },
+      {
         "title": "Grup Kartı / WhatsApp Group Analyzer",
         "status": "inProgress",
+        "icon": "chat",
+        "accent": "cyan",
         "description": "Privacy-aware WhatsApp group analyzer that creates a humorous group report without quoting private message content.",
         "highlights": ["Behavior-only analysis", "Privacy-first rules", "No private content quotes", "Fun social sharing format"],
         "designed": ["Local parsing rules", "Privacy boundaries for summaries", "Shareable report structure"],
@@ -145,22 +164,18 @@
       {
         "title": "Local Company Document Assistant",
         "status": "concept",
+        "icon": "document",
+        "accent": "violet",
         "description": "Local-first document assistant for small companies that answers questions only from company PDFs, handbooks, and catalogs with a privacy-first RAG approach.",
         "highlights": ["Local/private document QA", "Source citations", "No cloud database", "SMB-focused use case"],
         "designed": ["Document-only answer constraints", "Small-business onboarding path", "Source citation and refusal behavior"],
         "tech": ["React/TypeScript", "RAG", "Local LLM/Ollama planned", "pdfjs"]
       },
       {
-        "title": "Beni İşe Al - AI Persuasion Game",
-        "status": "concept",
-        "description": "A funny AI dialogue game where the player tries to convince a grumpy AI boss to hire them through suggested/editable responses and a persuasion meter.",
-        "highlights": ["AI dialogue game loop", "Controlled choice + editable answer design", "Persuasion score", "Multiple endings"],
-        "designed": ["Game-state loop", "Scoring and ending model", "Editable response interaction"],
-        "tech": ["React", "TypeScript", "Lightweight AI API", "Game-state engine"]
-      },
-      {
         "title": "Portfolio Website",
         "status": "portfolio",
+        "icon": "portfolio",
+        "accent": "slate",
         "liveUrl": "https://oguzdere.vercel.app/",
         "githubUrl": "https://github.com/ogzkaann/oguz-portfolio",
         "description": "Personal portfolio website presenting my software background, AI-assisted product projects, and selected work.",
@@ -172,7 +187,7 @@
     "skillGroups": [
       { "title": "Frontend", "skills": ["React", "Next.js", "Angular", "TypeScript", "Tailwind"] },
       { "title": "Backend/Data", "skills": ["Java", "Node.js", "REST", "SQL", "PostgreSQL", "Oracle"] },
-      { "title": "AI/Product", "skills": ["RAG", "OCR", "BYOK AI", "Prompt/system design", "Document extraction"] },
+      { "title": "AI/Product", "skills": ["RAG", "OCR", "BYOK AI", "Controlled AI dialogue", "Prompt/system design", "Document extraction"] },
       { "title": "Tools", "skills": ["Git", "Vercel", "GitHub", "Figma/design sense", "Unity"] },
       { "title": "Domain", "skills": ["Biomedical Engineering", "Hospital software", "MedTech interest"] }
     ],

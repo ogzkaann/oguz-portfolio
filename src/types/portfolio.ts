@@ -1,4 +1,18 @@
 export type ProjectStatus = "live" | "inProgress" | "concept" | "portfolio";
+export type ProjectIcon =
+  | "game"
+  | "university"
+  | "germany"
+  | "chat"
+  | "document"
+  | "portfolio";
+export type ProjectAccent =
+  | "orange"
+  | "blue"
+  | "emerald"
+  | "cyan"
+  | "violet"
+  | "slate";
 
 export interface NavigationItem {
   id: string;
@@ -17,6 +31,9 @@ export interface Experience {
 export interface Project {
   title: string;
   status: ProjectStatus;
+  icon?: ProjectIcon;
+  accent?: ProjectAccent;
+  featured?: boolean;
   description: string;
   liveUrl?: string;
   githubUrl?: string;

@@ -1,14 +1,14 @@
 {
   "Metadata": {
-    "title": "Oguz Kaan Dere — AI-orientierter Full-Stack-Entwickler",
-    "description": "Portfolio von Oğuz Kaan Dere, einem Full-Stack-Entwickler mit Hintergrund in der Biomedizintechnik, der KI-unterstützte, lokal-first Webprodukte, RAG-Tools, OCR-Workflows und praktische Entscheidungsunterstützungs-Apps entwickelt.",
-    "openGraphDescription": "KI-unterstützte Produktprojekte, Full-Stack-Softwareerfahrung, Dokumenten-Workflows, RAG-Tools, OCR-Workflows und praktische Entscheidungsunterstützungs-Apps."
+    "title": "Oguz Kaan Dere — KI-orientierter Full-Stack-Entwickler",
+    "description": "Portfolio von Oğuz Kaan Dere, einem Full-Stack-Entwickler mit Hintergrund in der Biomedizintechnik, der KI-unterstützte, lokal-first Webprodukte, RAG-Tools, OCR-Workflows, kontrollierte KI-Interaktionssysteme und praktische Entscheidungsunterstützungs-Apps entwickelt.",
+    "openGraphDescription": "KI-unterstützte Produktprojekte, Full-Stack-Softwareerfahrung, Dokumenten-Workflows, kontrollierte KI-Dialogsysteme, RAG-Tools, OCR-Workflows und praktische Entscheidungsunterstützungs-Apps."
   },
   "Home": {
     "hero": {
       "title": "Oguz Kaan Dere",
       "subtitle": "KI-orientierter Full-Stack-Entwickler · produktorientierter Entwickler · Hintergrund in der Biomedizintechnik",
-      "intro": "Ich entwickle praxisnahe Webprodukte, die sauberes Frontend-Engineering, Dokumenten-Workflows, KI-unterstützte Analyse und domänenspezifische Entscheidungssysteme verbinden.",
+      "intro": "Ich entwickle praxisnahe Webprodukte, die sauberes Frontend-Engineering, Dokumenten-Workflows, KI-unterstützte Analyse, kontrollierte KI-Interaktionen und domänenspezifische Entscheidungssysteme verbinden.",
       "transitionNote": "Ich lebe derzeit in Deutschland, verbessere meine Deutschkenntnisse und entwickle gezielte KI- und Produkt-Portfolio-Projekte, während ich nach qualifizierten Software- und Produktrollen suche."
     },
     "buttons": {
@@ -31,7 +31,7 @@
         "ariaLabel": "Profil",
         "paragraphs": [
           "Ich bin Softwareentwickler mit Hintergrund in der Biomedizintechnik, Enterprise-Web-Erfahrung und praktischer Erfahrung in Krankenhaussoftware. Meine berufliche Arbeit umfasst Angular/TypeScript-Frontend-Systeme, Java/JavaScript-Full-Stack-Aufgaben, datenbankgestützte Funktionen und produktionsnahe Fehlerbehebung.",
-          "In letzter Zeit liegt mein Schwerpunkt auf KI-unterstützter Produktentwicklung: lokal-first Apps, RAG, OCR, Dokumenten-Workflows, Entscheidungsunterstützungs-Interfaces und MVPs, die nicht nur gut demonstrierbar, sondern auch klar erklärbar sind.",
+          "In letzter Zeit liegt mein Schwerpunkt auf KI-unterstützter Produktentwicklung: lokal-first Apps, RAG, OCR, Dokumenten-Workflows, kontrollierte KI-Interaktionsloops, Entscheidungsunterstützungs-Interfaces und MVPs, die nicht nur gut demonstrierbar, sondern auch klar erklärbar sind.",
           "Während meines Übergangs nach Deutschland habe ich meine Deutschkenntnisse ausgebaut, mich auf den lokalen Software-Arbeitsmarkt ausgerichtet und fokussierte Portfolio-Projekte rund um praktische Problemstellungen entwickelt. Spiele, Systeme und Werkzeuge mit Persönlichkeit interessieren mich weiterhin, aber der Schwerpunkt liegt auf nützlicher Software."
         ]
       },
@@ -41,7 +41,7 @@
         "items": [
           "Ich übersetze vage reale Probleme in klare Datenstrukturen, Regeln und Review-Abläufe.",
           "Ich begrenze KI-Systeme bewusst, statt ihnen unkontrolliert Raum für Halluzinationen zu geben.",
-          "Ich trenne Quellensuche, Nutzerdaten, KI-Erklärung und die finale Entscheidung des Nutzers.",
+          "Ich trenne Quellensuche, Nutzerdaten, KI-Erklärung, lokale Scoring-Regeln und die finale Entscheidung des Nutzers.",
           "Bei sensiblen Dokumenten bevorzuge ich lokal-first und BYOK-Muster.",
           "Ich baue MVPs, die demonstrierbar, deploybar und nachvollziehbar sind."
         ]
@@ -74,8 +74,8 @@
         "company": "Eigenständig",
         "date": "2025-heute",
         "responsibilities": [
-          "Entwicklung lokal-first KI-unterstützter Portfolio-Produkte mit React/TypeScript, RAG, OCR, BYOK AI, PDF-/Dokumentenextraktion sowie Vercel/GitHub-Deployment.",
-          "Fokus auf praktische Entscheidungsunterstützungs-Tools: Aufenthalts- und Karrierepfad-Analyse, Zulassungs-Fit-Prüfung, private Dokumentenassistenten und KI-gestützte Mini-Games."
+          "Entwicklung lokal-first KI-unterstützter Portfolio-Produkte mit React/TypeScript, RAG, OCR, BYOK AI, PDF-/Dokumentenextraktion, deterministischen Interaktionssystemen sowie Vercel/GitHub-Deployment.",
+          "Fokus auf praktische Entscheidungsunterstützungs-Tools: Aufenthalts- und Karrierepfad-Analyse, Zulassungs-Fit-Prüfung, private Dokumentenassistenten und kontrollierte KI-Dialog-/Game-Systeme."
         ],
         "technologies": ["React", "TypeScript", "Vite", "Next.js", "Tailwind", "IndexedDB", "pdfjs", "Tesseract.js", "RAG", "BYOK AI", "Vercel"],
         "note": "Während meines Übergangs nach Deutschland habe ich mich auf den Ausbau meiner Deutschkenntnisse, die Ausrichtung auf den Arbeitsmarkt und gezielte KI-unterstützte Portfolio-Projekte konzentriert."
@@ -115,18 +115,23 @@
     ],
     "projects": [
       {
-        "title": "Germany Path Finder",
+        "title": "Schleimer",
         "status": "live",
-        "liveUrl": "https://germany-path-finder.vercel.app/",
-        "githubUrl": "https://github.com/ogzkaann/germany-path-finder",
-        "description": "Lokal-first RAG-Tool zur Entscheidungsunterstützung für Aufenthalts- und Karrierepfade in Deutschland, basierend auf kuratierten offiziellen PDFs, BYOK AI, Zitaten und konservativen, quellengebundenen Antworten.",
-        "highlights": ["Lokal-first RAG", "Offizielles Quellenmanifest", "PDF-Ingestion", "BYOK Gemini/OpenAI-kompatible AI", "Zitate und Unsicherheitsbehandlung", "Keine Rechtsberatung"],
-        "designed": ["Quellengebundener Antwortfluss", "Konservativer Pfadvergleich", "Private Dokumenten- und API-Key-Verarbeitung"],
-        "tech": ["Vite", "React", "TypeScript", "Tailwind", "IndexedDB/Dexie", "pdfjs", "RAG", "BYOK AI", "Vercel"]
+        "icon": "game",
+        "accent": "orange",
+        "featured": true,
+        "liveUrl": "https://schleimer.vercel.app/",
+        "githubUrl": "https://github.com/ogzkaann/schleimer",
+        "description": "Kontrolliertes KI-Dialogspiel, in dem der Spieler ein sarkastisches Bewerbungsgespräch überstehen muss, indem er Hire Chance, Boss Patience und Schleim Level ausbalanciert. Das LLM schreibt nur die Chef-Dialoge; Scoring, Enden, versteckte Skill-Tags und Game State laufen über eine deterministische lokale Engine.",
+        "highlights": ["Deterministische Scoring-Engine", "BYOK Gemini Boss-Dialoge", "Intelligenter Mock-Fallback", "Versteckte Skill-Tags", "Multi-Ending Game Loop", "Token-effiziente KI-Prompts"],
+        "designed": ["Kontrollierter KI-Interaktionsloop", "Lokale Game-State- und Scoring-Regeln", "Mock-first Architektur mit optionalem KI-Dialog"],
+        "tech": ["Vite", "React", "TypeScript", "Tailwind", "Zustand", "framer-motion", "Gemini API", "Vercel"]
       },
       {
         "title": "Admission Fit Checker",
         "status": "live",
+        "icon": "university",
+        "accent": "blue",
         "liveUrl": "https://admission-fit-checker.vercel.app/",
         "githubUrl": "https://github.com/ogzkaann/admission-fit-checker",
         "description": "KI-unterstützter Admission-Fit-Checker, der akademische Profile aus PDFs/Bildern extrahiert, OCR nutzt, Profildaten mit Studienprogrammanforderungen vergleicht und konservative Fit-Einschätzungen liefert.",
@@ -135,8 +140,22 @@
         "tech": ["Vite", "React", "TypeScript", "Tailwind", "IndexedDB/Dexie", "pdfjs", "Tesseract.js", "Zod", "Vercel"]
       },
       {
+        "title": "Germany Path Finder",
+        "status": "live",
+        "icon": "germany",
+        "accent": "emerald",
+        "liveUrl": "https://germany-path-finder.vercel.app/",
+        "githubUrl": "https://github.com/ogzkaann/germany-path-finder",
+        "description": "Lokal-first RAG-Tool zur Entscheidungsunterstützung für Aufenthalts- und Karrierepfade in Deutschland, basierend auf kuratierten offiziellen PDFs, BYOK AI, Zitaten und konservativen, quellengebundenen Antworten.",
+        "highlights": ["Lokal-first RAG", "Offizielles Quellenmanifest", "PDF-Ingestion", "BYOK Gemini/OpenAI-kompatible AI", "Zitate und Unsicherheitsbehandlung", "Keine Rechtsberatung"],
+        "designed": ["Quellengebundener Antwortfluss", "Konservativer Pfadvergleich", "Private Dokumenten- und API-Key-Verarbeitung"],
+        "tech": ["Vite", "React", "TypeScript", "Tailwind", "IndexedDB/Dexie", "pdfjs", "RAG", "BYOK AI", "Vercel"]
+      },
+      {
         "title": "Grup Kartı / WhatsApp Group Analyzer",
         "status": "inProgress",
+        "icon": "chat",
+        "accent": "cyan",
         "description": "Datenschutzbewusster WhatsApp-Gruppenanalysator, der einen humorvollen Gruppenbericht erstellt, ohne private Nachrichteninhalte zu zitieren.",
         "highlights": ["Nur Verhaltensanalyse", "Privacy-first Regeln", "Keine privaten Inhaltszitate", "Format für soziales Teilen"],
         "designed": ["Lokale Parsing-Regeln", "Datenschutzgrenzen für Zusammenfassungen", "Teilbare Berichtstruktur"],
@@ -145,22 +164,18 @@
       {
         "title": "Local Company Document Assistant",
         "status": "concept",
-        "description": "Lokal-first Dokumentenassistent für kleine Unternehmen, der Fragen ausschließlich aus Unternehmens-PDFs, Handbüchern und Katalogen beantwortet.",
+        "icon": "document",
+        "accent": "violet",
+        "description": "Lokal-first Dokumentenassistent für kleine Unternehmen, der Fragen ausschließlich aus Unternehmens-PDFs, Handbüchern und Katalogen mit einem privacy-first RAG-Ansatz beantwortet.",
         "highlights": ["Lokale/private Dokumenten-QA", "Quellenzitate", "Keine Cloud-Datenbank", "SMB-orientierter Use Case"],
         "designed": ["Antwortgrenzen nur auf Basis von Dokumenten", "Onboarding-Pfad für kleine Unternehmen", "Quellenzitate und Ablehnungsverhalten"],
         "tech": ["React/TypeScript", "RAG", "Lokales LLM/Ollama geplant", "pdfjs"]
       },
       {
-        "title": "Beni İşe Al - AI Persuasion Game",
-        "status": "concept",
-        "description": "Ein humorvolles KI-Dialogspiel, in dem der Spieler versucht, einen schwierigen KI-Chef über vorgeschlagene oder editierbare Antworten und eine Überzeugungsanzeige zur Einstellung zu bewegen.",
-        "highlights": ["KI-Dialog-Game-Loop", "Kontrollierte Auswahl + editierbare Antworten", "Überzeugungsscore", "Mehrere Enden"],
-        "designed": ["Game-State-Loop", "Scoring- und Ending-Modell", "Editierbare Antwortinteraktion"],
-        "tech": ["React", "TypeScript", "Leichtgewichtige AI API", "Game-State-Engine"]
-      },
-      {
         "title": "Portfolio Website",
         "status": "portfolio",
+        "icon": "portfolio",
+        "accent": "slate",
         "liveUrl": "https://oguzdere.vercel.app/",
         "githubUrl": "https://github.com/ogzkaann/oguz-portfolio",
         "description": "Persönliche Portfolio-Website, die meinen Software-Hintergrund, KI-unterstützte Produktprojekte und ausgewählte Arbeiten präsentiert.",
@@ -172,7 +187,7 @@
     "skillGroups": [
       { "title": "Frontend", "skills": ["React", "Next.js", "Angular", "TypeScript", "Tailwind"] },
       { "title": "Backend/Daten", "skills": ["Java", "Node.js", "REST", "SQL", "PostgreSQL", "Oracle"] },
-      { "title": "KI/Produkt", "skills": ["RAG", "OCR", "BYOK AI", "Prompt-/Systemdesign", "Dokumentenextraktion"] },
+      { "title": "KI/Produkt", "skills": ["RAG", "OCR", "BYOK AI", "Kontrollierte KI-Dialoge", "Prompt-/Systemdesign", "Dokumentenextraktion"] },
       { "title": "Tools", "skills": ["Git", "Vercel", "GitHub", "Figma/Designgespür", "Unity"] },
       { "title": "Domain", "skills": ["Biomedizintechnik", "Krankenhaussoftware", "Interesse an MedTech"] }
     ],

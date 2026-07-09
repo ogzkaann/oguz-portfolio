@@ -13,17 +13,19 @@ Live demo: https://oguzdere.vercel.app/
 ## Highlights
 
 - Sticky dark intro panel with profile photo, CV, GitHub, and LinkedIn links
+- English/German localization with clean locale-aware routes
 - Experience timeline covering AI product building, enterprise Angular work, hospital software, and Unity prototypes
 - Project section with honest status badges for live, in-progress, concept, and portfolio work
-- Product-thinking section focused on source-bound AI, local-first workflows, RAG, OCR, and decision-support tools
+- Product-thinking section focused on controlled AI interactions, source-bound AI, local-first workflows, RAG, OCR, and decision-support tools
 
 ## Featured Projects
 
-- Germany Path Finder - local-first RAG decision-support tool for Germany residence and career path planning
+- Schleimer - live controlled AI dialogue game with deterministic local scoring and BYOK Gemini boss dialogue
 - Admission Fit Checker - OCR/PDF-based academic profile extraction and conservative university fit checks
+- Germany Path Finder - local-first RAG decision-support tool for Germany residence and career path planning
 - Grup Kartı / WhatsApp Group Analyzer - privacy-aware group report concept
 - Local Company Document Assistant - local-first company PDF assistant concept
-- Beni İşe Al - AI persuasion game concept
+- Portfolio Website - this localized portfolio with a compact dark long-form layout
 
 ## Tech Stack
 
@@ -31,6 +33,7 @@ Live demo: https://oguzdere.vercel.app/
 - React
 - TypeScript
 - Tailwind CSS
+- next-intl
 - Vercel
 
 ## Run Locally
@@ -54,4 +57,4 @@ The portfolio expects `public/profile-oguz.jpg` for the profile photo and `publi
 
 ## Deployment
 
-The site is configured for Vercel with the default Next.js build flow.
+The site is configured for Vercel with npm and the standard Next.js build flow.
