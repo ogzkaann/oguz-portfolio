@@ -167,18 +167,20 @@
       },
       {
         "title": "Swarm Script",
-        "status": "inProgress",
+        "status": "live",
         "icon": "game",
         "accent": "orange",
         "featured": true,
-        "description": "A programmable swarm roguelite where players write a small Python-like script to control autonomous combat robots.",
-        "highlights": ["Custom DSL", "Safe interpreter", "Deterministic simulation", "Web Worker runtime", "Monaco editor", "Replayable combat"],
+        "liveUrl": "https://swarm-script.vercel.app/",
+        "githubUrl": "https://github.com/ogzkaann/swarm-script",
+        "description": "A tactical automation game where players program three combat robots with a small, safe rule language and guide them through a deterministic three-wave run.",
+        "highlights": ["Custom DSL", "Safe interpreter", "Deterministic Web Worker simulation", "Phaser renderer", "Monaco editor", "Playwright QA"],
         "designed": [
-          "Strict separation between React UI, Phaser rendering, and simulation state",
-          "Deterministic worker-based combat suitable for replay and analysis",
-          "A safe, intentionally limited scripting language with understandable runtime errors"
+          "Tokenizer, parser, typed AST, source diagnostics, and budgeted interpretation",
+          "Authoritative fixed-step simulation separated from React UI and Phaser rendering",
+          "Complete seeded run with upgrades, metrics, automated tests, CI, and production deployment"
         ],
-        "tech": ["React", "TypeScript", "Phaser", "Monaco Editor", "Web Workers"]
+        "tech": ["React", "TypeScript", "Phaser", "Monaco Editor", "Web Workers", "Vitest", "Playwright", "Vercel"]
       },
       {
         "title": "Germany Path Finder",
