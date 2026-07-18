@@ -1,49 +1,44 @@
 # Oguz Kaan Dere Portfolio
 
-Personal portfolio for Oguz Kaan Dere, a product-minded full-stack developer with a Biomedical Engineering background and a current focus on AI-assisted, local-first web products.
+Personal portfolio for a full-stack engineer working across Java/Spring backend systems, performance-conscious React architecture, resilient data flows, controlled AI products, and deterministic browser-based experiences.
 
-Live demo: https://oguzdere.vercel.app/
+**Live site:** https://oguzdere.vercel.app/
 
-## Screenshots
+## Featured engineering projects
 
-![Home](docs/assets/home.png)
+- **LedgerFlow** — Java microservice architecture, PostgreSQL, immutable ledger, pessimistic locking, reconciliation, OpenAPI, integration testing, and ADRs.
+- **context-api-but-it-scales** — measured React rendering behavior, `useSyncExternalStore`, selectors, persistence, cross-tab synchronization, tests, and CI.
+- **Yet Another Weather App — but with shaders** — typed weather pipeline, stale-while-revalidate cache, race protection, WebGL2/GLSL rendering, reduced motion, and GPU lifecycle cleanup.
+- **Swarm Script** — programmable swarm roguelite with a custom DSL, safe interpreter, deterministic worker simulation, Phaser, and Monaco Editor.
+- **Germany Path Finder** — local-first, source-bound RAG decision support with citations and uncertainty handling.
+- **Admission Fit Checker** — defensive PDF/OCR extraction, typed validation, human review, and explainable admission-fit analysis.
 
-![Projects](docs/assets/projects.png)
+## Site structure
 
-## Highlights
+- Recruiter-focused project-first content flow
+- English and German localization through `next-intl`
+- Responsive project and experience cards
+- Honest project statuses and direct live-demo/GitHub links
+- Downloadable CV, LinkedIn, and GitHub access
+- Minimal dark visual system with keyboard-accessible navigation
 
-- Sticky dark intro panel with profile photo, CV, GitHub, and LinkedIn links
-- English/German localization with clean locale-aware routes
-- Experience timeline covering AI product building, enterprise Angular work, hospital software, and Unity prototypes
-- Project section with honest status badges for live, in-progress, concept, and portfolio work
-- Product-thinking section focused on controlled AI interactions, source-bound AI, local-first workflows, RAG, OCR, and decision-support tools
+## Stack
 
-## Featured Projects
-
-- Schleimer - live controlled AI dialogue game with deterministic local scoring and BYOK Gemini boss dialogue
-- Admission Fit Checker - OCR/PDF-based academic profile extraction and conservative university fit checks
-- Germany Path Finder - local-first RAG decision-support tool for Germany residence and career path planning
-- Grup Kartı / WhatsApp Group Analyzer - privacy-aware group report concept
-- Local Company Document Assistant - local-first company PDF assistant concept
-- Portfolio Website - this localized portfolio with a compact dark long-form layout
-
-## Tech Stack
-
-- Next.js
-- React
+- Next.js 14
+- React 18
 - TypeScript
 - Tailwind CSS
 - next-intl
 - Vercel
 
-## Run Locally
+## Run locally
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open `http://localhost:3000`.
 
 ## Build
 
@@ -53,8 +48,11 @@ npm run build
 
 ## Assets
 
-The portfolio expects `public/profile-oguz.jpg` for the profile photo and `public/Oguz_Kaan_Dere_CV.pdf` for the CV download.
+The site expects:
+
+- `public/profile-oguz.jpg`
+- `public/Oguz_Kaan_Dere_CV.pdf`
 
 ## Deployment
 
-The site is configured for Vercel with npm and the standard Next.js build flow.
+The `master` branch is connected to Vercel and deploys through the standard Next.js build flow.
