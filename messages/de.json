@@ -1,15 +1,15 @@
 {
   "Metadata": {
-    "title": "Oguz Kaan Dere — KI-orientierter Full-Stack-Entwickler",
-    "description": "Portfolio von Oğuz Kaan Dere, einem Full-Stack-Entwickler mit Hintergrund in der Biomedizintechnik, der KI-unterstützte, lokal-first Webprodukte, RAG-Tools, OCR-Workflows, kontrollierte KI-Interaktionssysteme und praktische Entscheidungsunterstützungs-Apps entwickelt.",
-    "openGraphDescription": "KI-unterstützte Produktprojekte, Full-Stack-Softwareerfahrung, Dokumenten-Workflows, kontrollierte KI-Dialogsysteme, RAG-Tools, OCR-Workflows und praktische Entscheidungsunterstützungs-Apps."
+    "title": "Oguz Kaan Dere — Full-Stack Engineer",
+    "description": "Portfolio von Oguz Kaan Dere, einem Full-Stack Engineer für robuste Java-Backends, performancebewusste React-Anwendungen, kontrollierte KI-Produkte und deterministische browserbasierte Systeme.",
+    "openGraphDescription": "Java- und Spring-Backends, React-Architektur, WebGL-Anwendungen, kontrollierte KI-Produkte und produktionsnahes Software Engineering."
   },
   "Home": {
     "hero": {
       "title": "Oguz Kaan Dere",
-      "subtitle": "KI-orientierter Full-Stack-Entwickler · produktorientierter Entwickler · Hintergrund in der Biomedizintechnik",
-      "intro": "Ich entwickle praxisnahe Webprodukte, die sauberes Frontend-Engineering, Dokumenten-Workflows, KI-unterstützte Analyse, kontrollierte KI-Interaktionen und domänenspezifische Entscheidungssysteme verbinden.",
-      "transitionNote": "Ich lebe derzeit in Deutschland, verbessere meine Deutschkenntnisse und entwickle gezielte KI- und Produkt-Portfolio-Projekte, während ich nach qualifizierten Software- und Produktrollen suche."
+      "subtitle": "Full-Stack Engineer · Frontend-Architektur · Backend-Systeme · Interaktive Produkte",
+      "intro": "Ich entwickle deploybare Software mit Java/Spring-Backends, performancebewusster React-Architektur, robusten Datenflüssen, kontrollierten KI-Workflows und deterministischen browserbasierten Systemen.",
+      "transitionNote": "Ich lebe in Düsseldorf und suche Full-Stack-, Frontend-, Java/Backend-, AI-Product-, MedTech- sowie technische Game- und Interactive-Software-Rollen in Deutschland."
     },
     "buttons": {
       "viewProjects": "Projekte ansehen",
@@ -20,9 +20,9 @@
     },
     "navigation": [
       { "id": "about", "label": "Profil" },
-      { "id": "product-thinking", "label": "Produktdenken" },
-      { "id": "experience", "label": "Erfahrung" },
       { "id": "projects", "label": "Projekte" },
+      { "id": "experience", "label": "Erfahrung" },
+      { "id": "product-thinking", "label": "Engineering" },
       { "id": "skills", "label": "Skills" }
     ],
     "sections": {
@@ -30,38 +30,28 @@
         "title": "Profil",
         "ariaLabel": "Profil",
         "paragraphs": [
-          "Ich bin Softwareentwickler mit Hintergrund in der Biomedizintechnik, Enterprise-Web-Erfahrung und praktischer Erfahrung in Krankenhaussoftware. Meine berufliche Arbeit umfasst Angular/TypeScript-Frontend-Systeme, Java/JavaScript-Full-Stack-Aufgaben, datenbankgestützte Funktionen und produktionsnahe Fehlerbehebung.",
-          "In letzter Zeit liegt mein Schwerpunkt auf KI-unterstützter Produktentwicklung: lokal-first Apps, RAG, OCR, Dokumenten-Workflows, kontrollierte KI-Interaktionsloops, Entscheidungsunterstützungs-Interfaces und MVPs, die nicht nur gut demonstrierbar, sondern auch klar erklärbar sind.",
-          "Während meines Übergangs nach Deutschland habe ich meine Deutschkenntnisse ausgebaut, mich auf den lokalen Software-Arbeitsmarkt ausgerichtet und fokussierte Portfolio-Projekte rund um praktische Problemstellungen entwickelt. Spiele, Systeme und Werkzeuge mit Persönlichkeit interessieren mich weiterhin, aber der Schwerpunkt liegt auf nützlicher Software."
+          "Ich bin Software Engineer mit vier Jahren Berufserfahrung in Enterprise-Webanwendungen und Krankenhausinformationssystemen. Mein Hintergrund verbindet Angular- und TypeScript-Frontend-Entwicklung, Java-Full-Stack-Arbeit, datenbankgestützte Geschäftsprozesse und produktionsnahe Wartung.",
+          "Mein aktuelles Portfolio konzentriert sich auf technische Tiefe statt auf wiederholte Standard-CRUD-Demos: robuste Domänenmodelle, messbares React-Rendering, defensive API-Integrationen, WebGL-Rendering, deterministische Simulationen, kontrollierte KI-Workflows, Tests, CI, Accessibility und klare technische Dokumentation.",
+          "Durch meinen Abschluss in Biomedizintechnik interessiere ich mich besonders für MedTech, Healthcare-Software und andere Domänen, in denen Korrektheit, Nachvollziehbarkeit und verständliches Systemverhalten entscheidend sind."
         ]
       },
       "productThinking": {
-        "title": "Produktdenken",
-        "ariaLabel": "Produktdenken",
+        "title": "Engineering-Prinzipien",
+        "ariaLabel": "Engineering-Prinzipien",
         "items": [
-          "Ich übersetze vage reale Probleme in klare Datenstrukturen, Regeln und Review-Abläufe.",
-          "Ich begrenze KI-Systeme bewusst, statt ihnen unkontrolliert Raum für Halluzinationen zu geben.",
-          "Ich trenne Quellensuche, Nutzerdaten, KI-Erklärung, lokale Scoring-Regeln und die finale Entscheidung des Nutzers.",
-          "Bei sensiblen Dokumenten bevorzuge ich lokal-first und BYOK-Muster.",
-          "Ich baue MVPs, die demonstrierbar, deploybar und nachvollziehbar sind."
+          "Wichtige Abläufe werden mit expliziten Domänentypen, Zustandsmodellen und deterministischen Regeln modelliert.",
+          "UI, Domänenlogik, Persistenz, externe Services und Rendering-Systeme bleiben unabhängig testbar.",
+          "Fehlerfälle werden mit Validierung, Abbruchlogik, Race Protection, Stale-Data-Strategien und sinnvollen Fallbacks berücksichtigt.",
+          "Performance und Verhalten werden gemessen, statt sich auf Framework-Annahmen zu verlassen.",
+          "KI wird als kontrollierte Komponente mit Quellen, Unsicherheit und menschlicher Prüfung eingesetzt, nicht als versteckte Anwendungslogik.",
+          "Projekte werden mit Tests, CI, Dokumentation, Deployment, Accessibility-Prüfungen und ehrlichen Einschränkungen ausgeliefert."
         ]
       },
-      "experience": {
-        "title": "Erfahrung",
-        "ariaLabel": "Berufserfahrung"
-      },
-      "projects": {
-        "title": "Projekte",
-        "ariaLabel": "Ausgewählte Projekte"
-      },
-      "skills": {
-        "title": "Skills",
-        "ariaLabel": "Skills"
-      }
+      "experience": { "title": "Erfahrung", "ariaLabel": "Berufserfahrung" },
+      "projects": { "title": "Ausgewählte Engineering-Projekte", "ariaLabel": "Ausgewählte Engineering-Projekte" },
+      "skills": { "title": "Technischer Stack", "ariaLabel": "Technische Fähigkeiten" }
     },
-    "projectCard": {
-      "designedHeading": "Was ich konzipiert habe"
-    },
+    "projectCard": { "designedHeading": "Engineering-Fokus" },
     "statuses": {
       "live": "Live",
       "inProgress": "In Arbeit",
@@ -70,26 +60,26 @@
     },
     "experiences": [
       {
-        "title": "Unabhängiger KI-Produktentwickler / Portfolio-Sprint",
+        "title": "Independent Product Engineer / Portfolio Development",
         "company": "Eigenständig",
         "date": "2025-heute",
         "responsibilities": [
-          "Entwicklung lokal-first KI-unterstützter Portfolio-Produkte mit React/TypeScript, RAG, OCR, BYOK AI, PDF-/Dokumentenextraktion, deterministischen Interaktionssystemen sowie Vercel/GitHub-Deployment.",
-          "Fokus auf praktische Entscheidungsunterstützungs-Tools: Aufenthalts- und Karrierepfad-Analyse, Zulassungs-Fit-Prüfung, private Dokumentenassistenten und kontrollierte KI-Dialog-/Game-Systeme."
+          "Entwicklung produktionsnaher Portfolio-Systeme in Java/Spring-Backend-Architektur, React-Performance, WebGL-Rendering, kontrollierten KI-Workflows, Dokumentenverarbeitung und deterministischen Browser-Simulationen.",
+          "Jedes Projekt wird als vollständiges Engineering-Artefakt behandelt: typisierte Grenzen, Fehlerbehandlung, automatisierte Tests, CI, Deployment, Dokumentation, Accessibility und explizite Einschränkungen."
         ],
-        "technologies": ["React", "TypeScript", "Vite", "Next.js", "Tailwind", "IndexedDB", "pdfjs", "Tesseract.js", "RAG", "BYOK AI", "Vercel"],
-        "note": "Während meines Übergangs nach Deutschland habe ich mich auf den Ausbau meiner Deutschkenntnisse, die Ausrichtung auf den Arbeitsmarkt und gezielte KI-unterstützte Portfolio-Projekte konzentriert."
+        "technologies": ["Java", "Spring Boot", "React", "TypeScript", "PostgreSQL", "WebGL2", "GLSL", "Phaser", "RAG", "Docker", "GitHub Actions"],
+        "note": "Die aktuellen Projekte decken bewusst unterschiedliche Bereiche ab: Backend-Systeme, Frontend-Architektur, Datenresilienz, Grafikprogrammierung, KI-unterstützte Produkte und interaktive Software."
       },
       {
         "title": "Full Stack / Frontend Developer",
         "company": "Ekinoks Software",
         "date": "Dez. 2022-Dez. 2024",
         "responsibilities": [
-          "Entwicklung von Enterprise-Frontend-Funktionen mit Angular/TypeScript über komplexe UI-Module, Formulare, State und API-Integration hinweg.",
-          "Zusammenarbeit in einem professionellen Softwareteam an wartbarer Frontend-Umsetzung, Fehlerbehebung und iterativen Produktverbesserungen.",
-          "Beitrag zur Interface-Qualität in datenintensiven Geschäftsprozessen, bei denen Klarheit und Zuverlässigkeit wichtig waren."
+          "Entwicklung von Enterprise-Funktionen mit Angular und TypeScript über komplexe UI-Module, Formulare, State und REST-Integrationen hinweg.",
+          "Zusammenarbeit in einem professionellen Softwareteam an wartbarer Umsetzung, produktionsnaher Fehlerbehebung, Tests und iterativen Produktverbesserungen.",
+          "Arbeit an datenintensiven Geschäftsprozessen, bei denen Klarheit, Zuverlässigkeit und vorhersehbares Verhalten wesentlich waren."
         ],
-        "technologies": ["Angular", "TypeScript", "RxJS", "Kendo UI", "JavaScript", "REST", "Git"]
+        "technologies": ["Angular", "TypeScript", "RxJS", "NgRx", "Kendo UI", "Jasmine", "REST", "Git"]
       },
       {
         "title": "Full Stack Developer",
@@ -97,47 +87,87 @@
         "date": "Mai 2021-Nov. 2022",
         "responsibilities": [
           "Entwicklung von Funktionen für ein Krankenhausinformationssystem in einer datenbankgestützten Enterprise-Umgebung.",
-          "Arbeit an Java/JavaScript-Full-Stack-Aufgaben, Service-Entwicklung, Fehlerbehebung und produktionsorientierter Wartung.",
-          "Praktische Erfahrung mit Healthcare-Software-Workflows und entsprechenden Anforderungen an Zuverlässigkeit."
+          "Arbeit an Java- und JavaScript-Full-Stack-Aufgaben, Service-Entwicklung, Integrationen, produktionsnaher Wartung und Fehlerbehebung.",
+          "Praktische Erfahrung mit Healthcare-Workflows und hohen Anforderungen an Softwarezuverlässigkeit."
         ],
-        "technologies": ["Java", "JavaScript", "ExtJS", "SQL/Oracle", "Git"]
+        "technologies": ["Java", "Spring Boot", "JavaScript", "ExtJS", "Oracle", "PL/SQL", "REST", "Git"]
       },
       {
         "title": "Game Developer / Incubation",
         "company": "ATOM / METU",
         "date": "2019-2020",
         "responsibilities": [
-          "Entwicklung von Unity-Prototypen und Gameplay-Systemen im Rahmen von Game Jams und Inkubationsarbeit.",
-          "Erprobung von Visual Design, Interaktionsloops und schlanken Produktionsabläufen für spielbare Konzepte."
+          "Entwicklung von Unity-Prototypen und Gameplay-Systemen im Rahmen von Inkubationsarbeit und Game Jams.",
+          "Arbeit mit deterministischen Game Loops, Spielerfeedback, Visual Design und schlanken Produktionsabläufen."
         ],
         "technologies": ["Unity", "C#", "Blender", "Photoshop", "Git"]
       }
     ],
     "projects": [
       {
-        "title": "Schleimer",
+        "title": "LedgerFlow",
+        "status": "portfolio",
+        "icon": "document",
+        "accent": "blue",
+        "featured": true,
+        "githubUrl": "https://github.com/ogzkaann/ledgerflow-banking-platform",
+        "description": "Eine robuste Java-Microservice-Plattform rund um einen produktionsnahen Account Service und ein unveränderliches Banking-Ledger.",
+        "highlights": ["Ports and Adapters", "Unveränderliches Ledger", "Pessimistic Locking", "Reconciliation", "OpenAPI 3.1", "Integrationstests"],
+        "designed": [
+          "Framework-freies Domänenmodell und klare Transaktionsgrenzen",
+          "PostgreSQL-Schema, Flyway-Migrationen, Row Locking und sichere Saldenänderungen",
+          "Verifizierter Multi-Module-Build mit Architekturdokumentation und ADRs"
+        ],
+        "tech": ["Java 25", "Spring Boot", "Spring Cloud Gateway", "PostgreSQL", "Flyway", "Maven", "Docker", "GitHub Actions"]
+      },
+      {
+        "title": "context-api-but-it-scales",
         "status": "live",
+        "icon": "portfolio",
+        "accent": "cyan",
+        "featured": true,
+        "liveUrl": "https://ogzkaann.github.io/context-api-but-it-scales/",
+        "githubUrl": "https://github.com/ogzkaann/context-api-but-it-scales",
+        "description": "Ein gemessenes React-Rendering-Experiment, das klassischen gemeinsamen Context mit einem selectorbasierten External Store vergleicht.",
+        "highlights": ["Echte Render-Messungen", "Selector Subscriptions", "Undo und Redo", "Versionierte Persistenz", "Cross-Tab Sync", "Responsive QA"],
+        "designed": [
+          "Concurrency-sichere Subscriptions mit useSyncExternalStore",
+          "Render-Instrumentierung ohne Verfälschung der gemessenen Komponenten",
+          "Loop-freie BroadcastChannel-Synchronisierung und fehlertolerante Persistenz"
+        ],
+        "tech": ["React", "TypeScript", "Vite", "Vitest", "React Testing Library", "GitHub Actions"]
+      },
+      {
+        "title": "Yet Another Weather App — but with shaders",
+        "status": "live",
+        "icon": "germany",
+        "accent": "violet",
+        "featured": true,
+        "liveUrl": "https://ogzkaann.github.io/yet-another-weather-app-but-with-shaders/",
+        "githubUrl": "https://github.com/ogzkaann/yet-another-weather-app-but-with-shaders",
+        "description": "Eine minimalistische Wetteranwendung, bei der Live-Forecast-Daten eine eigene WebGL-Atmosphäre statt einer statischen Wetterkarte steuern.",
+        "highlights": ["WebGL2 und GLSL", "Typisierter Open-Meteo Client", "SWR Cache", "Race Protection", "Reduced Motion", "GPU Cleanup"],
+        "designed": [
+          "Weather-to-Shader-Mapping und deterministische prozedurale Szenen",
+          "Abbrechbare, deduplizierte Requests mit Stale-While-Revalidate Cache",
+          "Vom React-Lifecycle getrenntes Rendering mit explizitem Fallback"
+        ],
+        "tech": ["React", "TypeScript", "WebGL2", "GLSL", "Vite", "Open-Meteo", "Vitest", "GitHub Actions"]
+      },
+      {
+        "title": "Swarm Script",
+        "status": "inProgress",
         "icon": "game",
         "accent": "orange",
         "featured": true,
-        "liveUrl": "https://schleimer.vercel.app/",
-        "githubUrl": "https://github.com/ogzkaann/schleimer",
-        "description": "Kontrolliertes KI-Dialogspiel, in dem der Spieler ein sarkastisches Bewerbungsgespräch überstehen muss, indem er Hire Chance, Boss Patience und Schleim Level ausbalanciert. Das LLM schreibt nur die Chef-Dialoge; Scoring, Enden, versteckte Skill-Tags und Game State laufen über eine deterministische lokale Engine.",
-        "highlights": ["Deterministische Scoring-Engine", "BYOK Gemini Boss-Dialoge", "Intelligenter Mock-Fallback", "Versteckte Skill-Tags", "Multi-Ending Game Loop", "Token-effiziente KI-Prompts"],
-        "designed": ["Kontrollierter KI-Interaktionsloop", "Lokale Game-State- und Scoring-Regeln", "Mock-first Architektur mit optionalem KI-Dialog"],
-        "tech": ["Vite", "React", "TypeScript", "Tailwind", "Zustand", "framer-motion", "Gemini API", "Vercel"]
-      },
-      {
-        "title": "Admission Fit Checker",
-        "status": "live",
-        "icon": "university",
-        "accent": "blue",
-        "liveUrl": "https://admission-fit-checker.vercel.app/",
-        "githubUrl": "https://github.com/ogzkaann/admission-fit-checker",
-        "description": "KI-unterstützter Admission-Fit-Checker, der akademische Profile aus PDFs/Bildern extrahiert, OCR nutzt, Profildaten mit Studienprogrammanforderungen vergleicht und konservative Fit-Einschätzungen liefert.",
-        "highlights": ["Transcript-/Profilextraktion", "OCR mit Tesseract.js", "Academic-Fit-Engine", "Programmbibliothek", "BYOK AI", "Lokal-first Speicherung"],
-        "designed": ["PDF-/Bild-Extraktionsworkflow", "Fit-Einschätzungsmodell", "Prüfbare Profildaten vor der KI-Erklärung"],
-        "tech": ["Vite", "React", "TypeScript", "Tailwind", "IndexedDB/Dexie", "pdfjs", "Tesseract.js", "Zod", "Vercel"]
+        "description": "Ein programmierbares Swarm-Roguelite, in dem Spieler autonome Kampfroboter mit einer kleinen Python-ähnlichen Skriptsprache steuern.",
+        "highlights": ["Eigene DSL", "Sicherer Interpreter", "Deterministische Simulation", "Web Worker Runtime", "Monaco Editor", "Replayable Combat"],
+        "designed": [
+          "Klare Trennung zwischen React-UI, Phaser-Rendering und Simulationszustand",
+          "Deterministischer workerbasierter Kampf für Replay und Analyse",
+          "Bewusst begrenzte Skriptsprache mit verständlichen Runtime-Fehlern"
+        ],
+        "tech": ["React", "TypeScript", "Phaser", "Monaco Editor", "Web Workers"]
       },
       {
         "title": "Germany Path Finder",
@@ -146,51 +176,40 @@
         "accent": "emerald",
         "liveUrl": "https://germany-path-finder.vercel.app/",
         "githubUrl": "https://github.com/ogzkaann/germany-path-finder",
-        "description": "Lokal-first RAG-Tool zur Entscheidungsunterstützung für Aufenthalts- und Karrierepfade in Deutschland, basierend auf kuratierten offiziellen PDFs, BYOK AI, Zitaten und konservativen, quellengebundenen Antworten.",
-        "highlights": ["Lokal-first RAG", "Offizielles Quellenmanifest", "PDF-Ingestion", "BYOK Gemini/OpenAI-kompatible AI", "Zitate und Unsicherheitsbehandlung", "Keine Rechtsberatung"],
-        "designed": ["Quellengebundener Antwortfluss", "Konservativer Pfadvergleich", "Private Dokumenten- und API-Key-Verarbeitung"],
-        "tech": ["Vite", "React", "TypeScript", "Tailwind", "IndexedDB/Dexie", "pdfjs", "RAG", "BYOK AI", "Vercel"]
+        "description": "Ein lokal-first RAG-Tool zur Recherche von Aufenthalts- und Karrierewegen in Deutschland auf Basis kuratierter offizieller Quellen.",
+        "highlights": ["Lokal-first RAG", "Offizielle PDF-Quellen", "BYOK Modelle", "Zitate", "IndexedDB", "Unsicherheitsbehandlung"],
+        "designed": [
+          "Trennung von abgerufenen Belegen, KI-Erklärung und Nutzerentscheidung",
+          "Quellengebundene Antworten mit Missing-Evidence- und Unsicherheitszuständen",
+          "Private lokale Persistenz für Dokumente und Modellzugänge"
+        ],
+        "tech": ["React", "TypeScript", "Vite", "IndexedDB", "PDF.js", "RAG", "BYOK AI", "Vercel"]
       },
       {
-        "title": "Grup Kartı / WhatsApp Group Analyzer",
-        "status": "inProgress",
-        "icon": "chat",
-        "accent": "cyan",
-        "description": "Datenschutzbewusster WhatsApp-Gruppenanalysator, der einen humorvollen Gruppenbericht erstellt, ohne private Nachrichteninhalte zu zitieren.",
-        "highlights": ["Nur Verhaltensanalyse", "Privacy-first Regeln", "Keine privaten Inhaltszitate", "Format für soziales Teilen"],
-        "designed": ["Lokale Parsing-Regeln", "Datenschutzgrenzen für Zusammenfassungen", "Teilbare Berichtstruktur"],
-        "tech": ["React", "TypeScript", "Lokales Parsing", "KI-unterstützte Zusammenfassung"]
-      },
-      {
-        "title": "Local Company Document Assistant",
-        "status": "concept",
-        "icon": "document",
-        "accent": "violet",
-        "description": "Lokal-first Dokumentenassistent für kleine Unternehmen, der Fragen ausschließlich aus Unternehmens-PDFs, Handbüchern und Katalogen mit einem privacy-first RAG-Ansatz beantwortet.",
-        "highlights": ["Lokale/private Dokumenten-QA", "Quellenzitate", "Keine Cloud-Datenbank", "SMB-orientierter Use Case"],
-        "designed": ["Antwortgrenzen nur auf Basis von Dokumenten", "Onboarding-Pfad für kleine Unternehmen", "Quellenzitate und Ablehnungsverhalten"],
-        "tech": ["React/TypeScript", "RAG", "Lokales LLM/Ollama geplant", "pdfjs"]
-      },
-      {
-        "title": "Portfolio Website",
-        "status": "portfolio",
-        "icon": "portfolio",
+        "title": "Admission Fit Checker",
+        "status": "live",
+        "icon": "university",
         "accent": "slate",
-        "liveUrl": "https://oguzdere.vercel.app/",
-        "githubUrl": "https://github.com/ogzkaann/oguz-portfolio",
-        "description": "Persönliche Portfolio-Website, die meinen Software-Hintergrund, KI-unterstützte Produktprojekte und ausgewählte Arbeiten präsentiert.",
-        "highlights": ["Sticky persönliches Intro-Panel", "Kompaktes Long-Form-Layout", "Projektstatus-System", "Dunkle visuelle Identität"],
-        "designed": ["Content-Architektur", "Wiederverwendbares Portfolio-Datenmodell", "Responsive Projekt- und Erfahrungskarten"],
-        "tech": ["Next.js", "TypeScript", "Tailwind", "Vercel"]
+        "liveUrl": "https://admission-fit-checker.vercel.app/",
+        "githubUrl": "https://github.com/ogzkaann/admission-fit-checker",
+        "description": "Ein KI-unterstütztes Zulassungstool, das akademische Profile extrahiert und mit strukturierten Studiengangsanforderungen vergleicht.",
+        "highlights": ["PDF- und Bildextraktion", "OCR Fallback", "Typisierte Validierung", "Prüfbare Profile", "Erklärbares Scoring", "Lokal-first Privacy"],
+        "designed": [
+          "Menschliche Prüfung vor der Analyse und explizite Behandlung fehlender Felder",
+          "Konservatives Fit-Scoring getrennt von der KI-Erklärung",
+          "Defensive Dokumentenextraktion mit OCR-Fallback"
+        ],
+        "tech": ["React", "TypeScript", "Vite", "IndexedDB", "PDF.js", "Tesseract.js", "Zod", "Vercel"]
       }
     ],
     "skillGroups": [
-      { "title": "Frontend", "skills": ["React", "Next.js", "Angular", "TypeScript", "Tailwind"] },
-      { "title": "Backend/Daten", "skills": ["Java", "Node.js", "REST", "SQL", "PostgreSQL", "Oracle"] },
-      { "title": "KI/Produkt", "skills": ["RAG", "OCR", "BYOK AI", "Kontrollierte KI-Dialoge", "Prompt-/Systemdesign", "Dokumentenextraktion"] },
-      { "title": "Tools", "skills": ["Git", "Vercel", "GitHub", "Figma/Designgespür", "Unity"] },
-      { "title": "Domain", "skills": ["Biomedizintechnik", "Krankenhaussoftware", "Interesse an MedTech"] }
+      { "title": "Backend", "skills": ["Java", "Spring Boot", "Node.js", "NestJS", "Fastify", "REST APIs", "OpenAPI", "Maven"] },
+      { "title": "Frontend", "skills": ["React", "Angular", "Vue.js", "Next.js", "TypeScript", "Vite", "HTML", "CSS"] },
+      { "title": "Daten & Architektur", "skills": ["PostgreSQL", "Oracle", "PL/SQL", "MongoDB", "IndexedDB", "Flyway", "Ports and Adapters"] },
+      { "title": "Grafik & Interaktiv", "skills": ["WebGL2", "GLSL", "Phaser", "Monaco Editor", "Web Workers", "Unity", "C#"] },
+      { "title": "KI & Dokumente", "skills": ["RAG", "OCR", "Tesseract.js", "PDF.js", "BYOK Integrationen", "Strukturierte Extraktion"] },
+      { "title": "Delivery", "skills": ["Git", "GitHub Actions", "Docker", "Vercel", "GitHub Pages", "Playwright", "Vitest"] }
     ],
-    "footer": "© 2026 Oguz Kaan Dere. Entwickelt mit Next.js, TypeScript und Tailwind."
+    "footer": "© 2026 Oguz Kaan Dere. Erstellt mit Next.js, TypeScript und Tailwind."
   }
 }
