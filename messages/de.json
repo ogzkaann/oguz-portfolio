@@ -156,18 +156,20 @@
       },
       {
         "title": "Swarm Script",
-        "status": "inProgress",
+        "status": "live",
         "icon": "game",
         "accent": "orange",
         "featured": true,
-        "description": "Ein programmierbares Swarm-Roguelite, in dem Spieler autonome Kampfroboter mit einer kleinen Python-ähnlichen Skriptsprache steuern.",
-        "highlights": ["Eigene DSL", "Sicherer Interpreter", "Deterministische Simulation", "Web Worker Runtime", "Monaco Editor", "Replayable Combat"],
+        "liveUrl": "https://swarm-script.vercel.app/",
+        "githubUrl": "https://github.com/ogzkaann/swarm-script",
+        "description": "Ein taktisches Automationsspiel, in dem Spieler drei Kampfroboter mit einer kleinen, sicheren Regelsprache programmieren und durch einen deterministischen Drei-Wellen-Run führen.",
+        "highlights": ["Eigene DSL", "Sicherer Interpreter", "Deterministische Web-Worker-Simulation", "Phaser-Renderer", "Monaco Editor", "Playwright QA"],
         "designed": [
-          "Klare Trennung zwischen React-UI, Phaser-Rendering und Simulationszustand",
-          "Deterministischer workerbasierter Kampf für Replay und Analyse",
-          "Bewusst begrenzte Skriptsprache mit verständlichen Runtime-Fehlern"
+          "Tokenizer, Parser, typisierter AST, Quellcode-Diagnostik und budgetierte Interpretation",
+          "Autoritative Fixed-Step-Simulation getrennt von React-UI und Phaser-Rendering",
+          "Vollständiger Seed-basierter Run mit Upgrades, Metriken, automatisierten Tests, CI und Production Deployment"
         ],
-        "tech": ["React", "TypeScript", "Phaser", "Monaco Editor", "Web Workers"]
+        "tech": ["React", "TypeScript", "Phaser", "Monaco Editor", "Web Workers", "Vitest", "Playwright", "Vercel"]
       },
       {
         "title": "Germany Path Finder",
