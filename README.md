@@ -2,7 +2,7 @@
 
 Personal portfolio for a full-stack engineer working across Java/Spring backend systems, performance-conscious React architecture, resilient data flows, controlled AI products, and deterministic browser-based experiences.
 
-**Live site:** https://www.okdere.com
+**Live site:** https://okdere.com
 
 ## Featured engineering projects
 
@@ -55,4 +55,4 @@ The site expects:
 
 ## Deployment
 
-The `master` branch is connected to Vercel and deploys through the standard Next.js build flow. Production is served through the custom domain `https://www.okdere.com`.
+The `master` branch is connected to Vercel and deploys through the standard Next.js build flow. Production is served at `https://okdere.com`; legacy Vercel hostnames permanently redirect to the matching path on the canonical domain.
