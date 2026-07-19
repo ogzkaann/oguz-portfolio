@@ -12,6 +12,8 @@ const inter = Inter({
   display: "swap",
 });
 
+const siteUrl = "https://okdere.com";
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -25,7 +27,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
-    metadataBase: new URL("https://oguzdere.vercel.app"),
+    metadataBase: new URL(siteUrl),
     title: t("title"),
     description: t("description"),
     authors: [{ name: "Oguz Kaan Dere" }],
@@ -34,12 +36,13 @@ export async function generateMetadata({
       languages: {
         en: "/en",
         de: "/de",
+        "x-default": "/en",
       },
     },
     openGraph: {
       title: t("title"),
       description: t("openGraphDescription"),
-      url: `https://oguzdere.vercel.app/${locale}`,
+      url: `${siteUrl}/${locale}`,
       siteName: "Oguz Kaan Dere Portfolio",
       type: "website",
       locale,
