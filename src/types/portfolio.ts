@@ -1,22 +1,57 @@
-export type ProjectStatus = "live" | "inProgress" | "concept" | "portfolio";
-export type ProjectIcon =
-  | "game"
-  | "university"
-  | "germany"
-  | "chat"
-  | "document"
-  | "portfolio";
-export type ProjectAccent =
-  | "orange"
-  | "blue"
-  | "emerald"
-  | "cyan"
-  | "violet"
-  | "slate";
+export type ProjectWorld = "engineering" | "games";
 
-export interface NavigationItem {
-  id: string;
-  label: string;
+export type ProjectStatus =
+  | "live"
+  | "documented"
+  | "preProduction"
+  | "prototype";
+
+export type ProjectId =
+  | "ledgerflow"
+  | "weatherShaders"
+  | "contextApi"
+  | "germanyPathFinder"
+  | "admissionFitChecker"
+  | "nightSoup"
+  | "swarmScript"
+  | "gladiatorArena"
+  | "schleimer";
+
+export type ProjectLinkKind =
+  | "live"
+  | "github"
+  | "architecture"
+  | "overview"
+  | "devlog";
+
+export interface ProjectLink {
+  kind: ProjectLinkKind;
+  href: string;
+}
+
+export interface ProjectMedia {
+  src: string;
+  position?: string;
+}
+
+export interface ProjectDefinition {
+  id: ProjectId;
+  world: ProjectWorld;
+  status: ProjectStatus;
+  featured?: boolean;
+  media?: ProjectMedia;
+  stack: string[];
+  links: ProjectLink[];
+}
+
+export interface LocalizedProject {
+  title: string;
+  eyebrow: string;
+  hook: string;
+  role: string;
+  contributions: string[];
+  mediaAlt?: string;
+  note?: string;
 }
 
 export interface Experience {
@@ -28,77 +63,7 @@ export interface Experience {
   note?: string;
 }
 
-export interface Project {
-  title: string;
-  status: ProjectStatus;
-  icon?: ProjectIcon;
-  accent?: ProjectAccent;
-  featured?: boolean;
-  description: string;
-  liveUrl?: string;
-  githubUrl?: string;
-  highlights: string[];
-  designed: string[];
-  tech: string[];
-}
-
 export interface SkillGroup {
   title: string;
   skills: string[];
-}
-
-export interface PortfolioMessages {
-  Metadata: {
-    title: string;
-    description: string;
-    openGraphDescription: string;
-  };
-  Home: {
-    hero: {
-      title: string;
-      subtitle: string;
-      intro: string;
-      transitionNote: string;
-    };
-    buttons: {
-      viewProjects: string;
-      downloadCv: string;
-      github: string;
-      linkedIn: string;
-      liveDemo: string;
-    };
-    navigation: NavigationItem[];
-    sections: {
-      about: {
-        title: string;
-        ariaLabel: string;
-        paragraphs: string[];
-      };
-      productThinking: {
-        title: string;
-        ariaLabel: string;
-        items: string[];
-      };
-      experience: {
-        title: string;
-        ariaLabel: string;
-      };
-      projects: {
-        title: string;
-        ariaLabel: string;
-      };
-      skills: {
-        title: string;
-        ariaLabel: string;
-      };
-    };
-    projectCard: {
-      designedHeading: string;
-    };
-    statuses: Record<ProjectStatus, string>;
-    experiences: Experience[];
-    projects: Project[];
-    skillGroups: SkillGroup[];
-    footer: string;
-  };
 }

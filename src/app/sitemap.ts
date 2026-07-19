@@ -1,11 +1,17 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://okdere.com";
+const baseUrl = "https://okdere.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ["en", "de"].map((locale) => ({
-    url: `${siteUrl}/${locale}`,
-    changeFrequency: "monthly" as const,
-    priority: 1,
-  }));
+  const paths = ["", "/engineering", "/games", "/about"];
+  const locales = ["en", "de"];
+
+  return locales.flatMap((locale) =>
+    paths.map((path) => ({
+      url: `${baseUrl}/${locale}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: path === "" ? 1 : 0.8,
+    })),
+  );
 }

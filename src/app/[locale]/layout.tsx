@@ -1,59 +1,28 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Barlow_Condensed, Inter } from "next/font/google";
 import type { ReactNode } from "react";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-body",
   display: "swap",
 });
 
-const siteUrl = "https://okdere.com";
+const barlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: Locale }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Metadata" });
-
-  return {
-    metadataBase: new URL(siteUrl),
-    title: t("title"),
-    description: t("description"),
-    authors: [{ name: "Oguz Kaan Dere" }],
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: "/en",
-        de: "/de",
-        "x-default": "/en",
-      },
-    },
-    openGraph: {
-      title: t("title"),
-      description: t("openGraphDescription"),
-      url: `${siteUrl}/${locale}`,
-      siteName: "Oguz Kaan Dere Portfolio",
-      type: "website",
-      locale,
-      alternateLocale: routing.locales.filter((item) => item !== locale),
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: t("title"),
-      description: t("description"),
-    },
-  };
 }
 
 export default async function LocaleLayout({
@@ -73,10 +42,13 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body className={inter.className}>
+    <html lang={locale} className={`${inter.variable} ${barlowCondensed.variable}`}>
+      <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <a className="skip-link" href="#main-content">{locale === "de" ? "Zum Hauptinhalt springen" : "Skip to main content"}</a>
+          <SiteHeader />
+          <div id="main-content">{children}</div>
+          <SiteFooter />
         </NextIntlClientProvider>
       </body>
     </html>

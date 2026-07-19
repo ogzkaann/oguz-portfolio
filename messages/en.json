@@ -1,228 +1,281 @@
 {
   "Metadata": {
-    "title": "Oguz Kaan Dere — Full-Stack Engineer",
-    "description": "Portfolio of Oguz Kaan Dere, a full-stack engineer building resilient Java backend systems, performance-conscious React applications, controlled AI products, and deterministic browser-based experiences.",
-    "openGraphDescription": "Java and Spring backend systems, React architecture, WebGL experiences, controlled AI products, and production-minded engineering projects."
+    "work": {
+      "title": "Oguz Kaan Dere — Software Engineering & Games",
+      "description": "Portfolio of Oguz Kaan Dere: full-stack engineering, AI-assisted product work, interactive systems and game prototypes."
+    },
+    "engineering": {
+      "title": "Engineering — Oguz Kaan Dere",
+      "description": "Selected backend, frontend and AI-assisted product engineering by Oguz Kaan Dere."
+    },
+    "games": {
+      "title": "Games — Oguz Kaan Dere",
+      "description": "Game systems, prototypes and interactive work by Oguz Kaan Dere, including Night Soup and Swarm Script."
+    },
+    "about": {
+      "title": "About — Oguz Kaan Dere",
+      "description": "Software development experience, product approach and technical background of Oguz Kaan Dere."
+    }
   },
-  "Home": {
-    "hero": {
-      "title": "Oguz Kaan Dere",
-      "subtitle": "Full-Stack Engineer · Frontend Architecture · Backend Systems · Interactive Products",
-      "intro": "I build deployable software across Java/Spring backends, performance-conscious React architecture, resilient data flows, controlled AI workflows, and deterministic browser-based systems.",
-      "transitionNote": "Based in Düsseldorf and open to full-stack, frontend, Java/backend, AI-product, MedTech, and technical game or interactive software roles in Germany."
+  "Site": {
+    "skipToContent": "Skip to main content",
+    "homeLabel": "Oguz Kaan Dere, home",
+    "navigationLabel": "Primary navigation",
+    "openMenu": "Open navigation",
+    "closeMenu": "Close navigation",
+    "navigation": {
+      "work": "Work",
+      "engineering": "Engineering",
+      "games": "Games",
+      "about": "About"
     },
-    "buttons": {
-      "viewProjects": "View Projects",
-      "downloadCv": "Download CV",
+    "links": {
       "github": "GitHub",
-      "linkedIn": "LinkedIn",
-      "liveDemo": "Live Demo"
+      "linkedin": "LinkedIn",
+      "cv": "CV"
     },
-    "navigation": [
-      { "id": "about", "label": "About" },
-      { "id": "projects", "label": "Projects" },
-      { "id": "experience", "label": "Experience" },
-      { "id": "product-thinking", "label": "Engineering" },
-      { "id": "skills", "label": "Skills" }
-    ],
-    "sections": {
-      "about": {
-        "title": "About",
-        "ariaLabel": "About",
-        "paragraphs": [
-          "I am a software engineer with four years of professional experience across enterprise web applications and hospital information systems. My background combines Angular and TypeScript frontend delivery, Java full-stack development, database-backed business workflows, and production maintenance.",
-          "My current portfolio focuses on engineering depth rather than repeating standard CRUD demos: resilient domain models, measurable React rendering behavior, defensive API integrations, WebGL rendering, deterministic simulations, controlled AI workflows, testing, CI, accessibility, and clear technical documentation.",
-          "My Biomedical Engineering degree gives me an additional interest in MedTech, healthcare software, and other domains where correctness, traceability, and understandable system behavior matter."
-        ]
-      },
-      "productThinking": {
-        "title": "Engineering Principles",
-        "ariaLabel": "Engineering principles",
-        "items": [
-          "Model important behavior with explicit domain types, state machines, and deterministic rules.",
-          "Keep UI, domain logic, persistence, external services, and rendering systems independently testable.",
-          "Design for failure with validation, cancellation, race protection, stale-data strategies, and graceful fallbacks.",
-          "Measure performance and behavior instead of relying on framework assumptions.",
-          "Use AI as a constrained component with sources, uncertainty, and human review—not as hidden application logic.",
-          "Ship projects with tests, CI, documentation, deployment, accessibility checks, and honest limitations."
-        ]
-      },
-      "experience": {
-        "title": "Experience",
-        "ariaLabel": "Work experience"
-      },
-      "projects": {
-        "title": "Featured Engineering Projects",
-        "ariaLabel": "Featured engineering projects"
-      },
-      "skills": {
-        "title": "Technical Stack",
-        "ariaLabel": "Technical skills"
-      }
-    },
-    "projectCard": {
-      "designedHeading": "Engineering focus"
-    },
-    "statuses": {
+    "footer": "© 2026 Oguz Kaan Dere"
+  },
+  "Portfolio": {
+    "statusLabels": {
       "live": "Live",
-      "inProgress": "In progress",
-      "concept": "Concept",
-      "portfolio": "Portfolio"
+      "documented": "Documented build",
+      "preProduction": "Pre-production",
+      "prototype": "Prototype"
     },
-    "experiences": [
-      {
-        "title": "Independent Product Engineer / Portfolio Development",
-        "company": "Self-directed",
-        "date": "2025-Present",
-        "responsibilities": [
-          "Building production-minded portfolio systems across Java/Spring backend architecture, React performance, WebGL rendering, controlled AI workflows, document processing, and deterministic browser simulations.",
-          "Treating each project as a complete engineering artifact with typed boundaries, failure handling, automated tests, CI, deployment, documentation, accessibility, and explicit limitations."
-        ],
-        "technologies": ["Java", "Spring Boot", "React", "TypeScript", "PostgreSQL", "WebGL2", "GLSL", "Phaser", "RAG", "Docker", "GitHub Actions"],
-        "note": "Current work is intentionally varied: backend systems, frontend architecture, data resilience, graphics programming, AI-assisted products, and interactive software."
+    "linkLabels": {
+      "live": "View project",
+      "github": "GitHub",
+      "architecture": "Architecture",
+      "overview": "Project overview",
+      "devlog": "Devlog"
+    },
+    "home": {
+      "introduction": "Four years building reliable software and interactive systems. Düsseldorf, Germany.",
+      "engineering": {
+        "eyebrow": "Software systems",
+        "title": "Engineering",
+        "description": "Backend systems, frontend architecture and practical AI-assisted products.",
+        "cta": "Explore Engineering"
       },
-      {
-        "title": "Full Stack / Frontend Developer",
-        "company": "Ekinoks Software",
-        "date": "Dec 2022-Dec 2024",
-        "responsibilities": [
-          "Built enterprise Angular and TypeScript features across complex UI modules, forms, state, and REST integrations.",
-          "Worked in a professional software team on maintainable delivery, production bug fixing, testing, and iterative product improvements.",
-          "Contributed to data-heavy business workflows where clarity, reliability, and predictable behavior were essential."
-        ],
-        "technologies": ["Angular", "TypeScript", "RxJS", "NgRx", "Kendo UI", "Jasmine", "REST", "Git"]
+      "games": {
+        "eyebrow": "Interactive worlds",
+        "title": "Games",
+        "description": "Atmospheric concepts, deterministic simulations and playable prototypes.",
+        "cta": "Explore Games"
       },
-      {
-        "title": "Full Stack Developer",
-        "company": "Fonet Software",
-        "date": "May 2021-Nov 2022",
-        "responsibilities": [
-          "Developed hospital information system features in a database-backed enterprise environment.",
-          "Worked across Java and JavaScript full-stack tasks, service development, integrations, production maintenance, and bug fixing.",
-          "Gained practical experience with healthcare workflows and software reliability expectations."
-        ],
-        "technologies": ["Java", "Spring Boot", "JavaScript", "ExtJS", "Oracle", "PL/SQL", "REST", "Git"]
+      "tabs": {
+        "all": "Selected Work",
+        "engineering": "Engineering",
+        "games": "Games"
       },
-      {
-        "title": "Game Developer / Incubation",
-        "company": "ATOM / METU",
-        "date": "2019-2020",
-        "responsibilities": [
-          "Built Unity prototypes and gameplay systems through incubation work and game jams.",
-          "Explored deterministic game loops, player feedback, visual design, and lightweight production pipelines."
-        ],
-        "technologies": ["Unity", "C#", "Blender", "Photoshop", "Git"]
-      }
-    ],
-    "projects": [
-      {
+      "workNavigationLabel": "Selected work navigation",
+      "selectedWorkLabel": "Selected engineering and games work",
+      "otherEngineering": "Other engineering projects",
+      "otherGames": "Other game projects"
+    },
+    "engineering": {
+      "eyebrow": "Engineering",
+      "title": "Systems that make their boundaries visible.",
+      "intro": "I work across Java backends, typed frontend architecture and document-heavy AI products. The common thread is explicit state, reviewable decisions and software that explains what it is doing.",
+      "supporting": "The projects below separate implemented behavior from planned architecture and keep sensitive workflows local where that tradeoff makes sense.",
+      "featuredLabel": "Featured engineering project",
+      "projectsEyebrow": "Selected systems",
+      "projectsTitle": "Frontend, AI product and interaction architecture"
+    },
+    "games": {
+      "eyebrow": "Games",
+      "title": "Atmosphere, rules and readable simulation.",
+      "intro": "My game work moves between narrative systems and technical prototypes. I am interested in worlds with a strong point of view and mechanics whose internal logic remains legible to the player.",
+      "supporting": "Night Soup is currently a pre-production concept. Swarm Script and Schleimer are playable; Gladiator Arena remains a prototype without public media.",
+      "featuredLabel": "Featured game project",
+      "projectsEyebrow": "Playable and experimental work",
+      "projectsTitle": "Technical games and prototypes"
+    },
+    "projects": {
+      "ledgerflow": {
         "title": "LedgerFlow",
-        "status": "portfolio",
-        "icon": "document",
-        "accent": "blue",
-        "featured": true,
-        "githubUrl": "https://github.com/ogzkaann/ledgerflow-banking-platform",
-        "description": "A resilient Java microservice portfolio platform built around a production-style Account Service and immutable banking ledger.",
-        "highlights": ["Ports and adapters", "Immutable ledger", "Pessimistic locking", "Reconciliation", "OpenAPI 3.1", "Integration tests"],
-        "designed": [
-          "Framework-free domain model and transaction boundaries",
-          "PostgreSQL schema, Flyway migrations, row locking, and balance safety",
-          "Verified multi-module build with architecture documentation and ADRs"
+        "eyebrow": "Featured engineering project",
+        "hook": "A Java microservice portfolio system for resilient account and ledger workflows.",
+        "role": "System design and backend engineering",
+        "contributions": [
+          "Built a production-style Account Service with immutable ledger history and reconciliation.",
+          "Used ports and adapters, PostgreSQL row locking, Flyway migrations and an OpenAPI 3.1 contract.",
+          "Documented service boundaries, failure handling and the planned event-driven transfer workflow."
         ],
-        "tech": ["Java 25", "Spring Boot", "Spring Cloud Gateway", "PostgreSQL", "Flyway", "Maven", "Docker", "GitHub Actions"]
+        "mediaAlt": "LedgerFlow transfer state machine from the architecture documentation",
+        "note": "The diagram shows the documented transfer design. The Account Service is operational; broader cross-service workflows remain planned."
       },
-      {
+      "weatherShaders": {
+        "title": "Weather with Shaders",
+        "eyebrow": "Interactive frontend",
+        "hook": "Live forecast data drives a custom WebGL atmosphere instead of sitting inside a conventional weather card.",
+        "role": "Frontend architecture and WebGL rendering",
+        "contributions": [
+          "Mapped normalized Open-Meteo data to bounded shader uniforms.",
+          "Kept the renderer outside React with explicit lifecycle cleanup.",
+          "Built accessible search, geolocation, units and resilient forecast caching."
+        ],
+        "mediaAlt": "Berlin forecast rendered as a blue WebGL atmosphere"
+      },
+      "contextApi": {
         "title": "context-api-but-it-scales",
-        "status": "live",
-        "icon": "portfolio",
-        "accent": "cyan",
-        "featured": true,
-        "liveUrl": "https://ogzkaann.github.io/context-api-but-it-scales/",
-        "githubUrl": "https://github.com/ogzkaann/context-api-but-it-scales",
-        "description": "A measured React rendering experiment comparing conventional shared Context with a selector-based external store.",
-        "highlights": ["Real render measurements", "Selector subscriptions", "Undo and redo", "Versioned persistence", "Cross-tab sync", "Responsive QA"],
-        "designed": [
-          "Concurrency-safe subscriptions with useSyncExternalStore",
-          "Render instrumentation that does not contaminate the measured components",
-          "Loop-free BroadcastChannel synchronization and failure-safe persistence"
+        "eyebrow": "React systems experiment",
+        "hook": "A measurable comparison between shared React Context and a selector-based external store.",
+        "role": "State architecture and rendering instrumentation",
+        "contributions": [
+          "Implemented selector subscriptions with useSyncExternalStore.",
+          "Measured committed component renders without contaminating the result.",
+          "Added bounded history, safe persistence and loop-free cross-tab sync."
         ],
-        "tech": ["React", "TypeScript", "Vite", "Vitest", "React Testing Library", "GitHub Actions"]
+        "mediaAlt": "Rendering laboratory comparing naive Context with an optimized store"
       },
-      {
-        "title": "Yet Another Weather App — but with shaders",
-        "status": "live",
-        "icon": "germany",
-        "accent": "violet",
-        "featured": true,
-        "liveUrl": "https://ogzkaann.github.io/yet-another-weather-app-but-with-shaders/",
-        "githubUrl": "https://github.com/ogzkaann/yet-another-weather-app-but-with-shaders",
-        "description": "A minimalist weather application where live forecast data drives a custom WebGL atmosphere instead of another static weather card.",
-        "highlights": ["WebGL2 and GLSL", "Typed Open-Meteo client", "SWR cache", "Race protection", "Reduced motion", "GPU cleanup"],
-        "designed": [
-          "Weather-to-shader parameter mapping and deterministic procedural scenes",
-          "Abortable, deduplicated requests with stale-while-revalidate caching",
-          "Renderer lifecycle separated from React with explicit fallback behavior"
-        ],
-        "tech": ["React", "TypeScript", "WebGL2", "GLSL", "Vite", "Open-Meteo", "Vitest", "GitHub Actions"]
-      },
-      {
-        "title": "Swarm Script",
-        "status": "live",
-        "icon": "game",
-        "accent": "orange",
-        "featured": true,
-        "liveUrl": "https://swarm-script.vercel.app/",
-        "githubUrl": "https://github.com/ogzkaann/swarm-script",
-        "description": "A tactical automation game where players program three combat robots with a small, safe rule language and guide them through a deterministic three-wave run.",
-        "highlights": ["Custom DSL", "Safe interpreter", "Deterministic Web Worker simulation", "Phaser renderer", "Monaco editor", "Playwright QA"],
-        "designed": [
-          "Tokenizer, parser, typed AST, source diagnostics, and budgeted interpretation",
-          "Authoritative fixed-step simulation separated from React UI and Phaser rendering",
-          "Complete seeded run with upgrades, metrics, automated tests, CI, and production deployment"
-        ],
-        "tech": ["React", "TypeScript", "Phaser", "Monaco Editor", "Web Workers", "Vitest", "Playwright", "Vercel"]
-      },
-      {
+      "germanyPathFinder": {
         "title": "Germany Path Finder",
-        "status": "live",
-        "icon": "germany",
-        "accent": "emerald",
-        "liveUrl": "https://germany-path-finder.vercel.app/",
-        "githubUrl": "https://github.com/ogzkaann/germany-path-finder",
-        "description": "A local-first RAG decision-support tool for researching Germany residence and career paths from owner-curated official sources.",
-        "highlights": ["Local-first RAG", "Official PDF sources", "BYOK models", "Citations", "IndexedDB", "Uncertainty handling"],
-        "designed": [
-          "Separation of retrieved evidence, AI explanation, and user decision",
-          "Source-bound answers with missing-evidence and uncertainty states",
-          "Private local persistence for documents and model credentials"
+        "eyebrow": "AI-assisted product",
+        "hook": "A local-first RAG tool for comparing Germany residence and career paths against curated official sources.",
+        "role": "Product design and full-stack implementation",
+        "contributions": [
+          "Separated official source retrieval, user data and AI explanation.",
+          "Added PDF ingestion, citations and explicit uncertainty handling.",
+          "Kept documents and BYOK credentials local to the browser."
         ],
-        "tech": ["React", "TypeScript", "Vite", "IndexedDB", "PDF.js", "RAG", "BYOK AI", "Vercel"]
+        "mediaAlt": "Germany Path Finder command center with route comparison and sources"
       },
-      {
+      "admissionFitChecker": {
         "title": "Admission Fit Checker",
-        "status": "live",
-        "icon": "university",
-        "accent": "slate",
-        "liveUrl": "https://admission-fit-checker.vercel.app/",
-        "githubUrl": "https://github.com/ogzkaann/admission-fit-checker",
-        "description": "An AI-assisted university admission tool that extracts academic profiles and compares them with structured program requirements.",
-        "highlights": ["PDF and image extraction", "OCR fallback", "Typed validation", "Reviewable profiles", "Explainable scoring", "Local-first privacy"],
-        "designed": [
-          "Human review before analysis and explicit missing-field handling",
-          "Conservative fit scoring separated from AI explanation",
-          "Defensive document extraction with OCR fallback"
+        "eyebrow": "Document workflow",
+        "hook": "A conservative admission-fit workflow that extracts academic profiles and compares them with program requirements.",
+        "role": "Product design and full-stack implementation",
+        "contributions": [
+          "Combined PDF extraction and Tesseract.js OCR for profile intake.",
+          "Made extracted fields reviewable before fit evaluation.",
+          "Kept local storage and AI explanation separate from the final user decision."
         ],
-        "tech": ["React", "TypeScript", "Vite", "IndexedDB", "PDF.js", "Tesseract.js", "Zod", "Vercel"]
+        "mediaAlt": "Admission Fit Checker dashboard showing extracted academic profile data"
+      },
+      "nightSoup": {
+        "title": "Night Soup",
+        "eyebrow": "Atmospheric flagship game",
+        "hook": "A rural-gothic cooking mystery set in a rain-soaked Oregon diner.",
+        "role": "Game direction, systems design and narrative design",
+        "contributions": [
+          "Designed an active cooking, trust and information-reveal loop.",
+          "Structured clue collection as source-aware deductions rather than hidden-object hunting.",
+          "Defined a signal-based Godot architecture with Resource/JSON-authored content."
+        ],
+        "mediaAlt": "Night Soup concept scene inside a warm diner on a rainy Oregon night",
+        "note": "Current status: approved GDD and visual direction; no playable build is claimed."
+      },
+      "swarmScript": {
+        "title": "Swarm Script",
+        "eyebrow": "Featured technical game",
+        "hook": "Program a three-robot squad with a safe rule language, then watch the logic fight through a deterministic arena.",
+        "role": "Game systems, simulation and frontend engineering",
+        "contributions": [
+          "Built a tokenizer, parser, typed AST and budgeted interpreter without eval.",
+          "Separated a deterministic 30 Hz simulation into a typed Web Worker protocol.",
+          "Used a latest-only snapshot mailbox to keep Phaser rendering responsive at higher simulation speeds."
+        ],
+        "mediaAlt": "Swarm Script interface with behavior editor, tactical arena and deployment controls"
+      },
+      "gladiatorArena": {
+        "title": "Gladiator Arena",
+        "eyebrow": "Unity prototype",
+        "hook": "An arena-combat prototype with persistent roster creation and simulated battles.",
+        "role": "Gameplay and persistence prototype",
+        "contributions": [
+          "Structured fighter creation, selection and upgrade flow.",
+          "Simulated battles with winner tracking.",
+          "Stored persistent roster state with JSON saves."
+        ],
+        "note": "Verified project text only; public screenshots and links are not available yet."
+      },
+      "schleimer": {
+        "title": "Schleimer",
+        "eyebrow": "AI dialogue game",
+        "hook": "A short persuasion game where local rules score the interview and AI writes only the boss dialogue.",
+        "role": "Product design, game loop and frontend engineering",
+        "contributions": [
+          "Kept scoring, endings and hidden skill tags deterministic and local.",
+          "Used BYOK Gemini for optional dialogue with a playable mock fallback.",
+          "Designed editable response choices around a compact multi-ending loop."
+        ],
+        "mediaAlt": "Schleimer interview screen with response choices and hiring status"
       }
-    ],
-    "skillGroups": [
-      { "title": "Backend", "skills": ["Java", "Spring Boot", "Node.js", "NestJS", "Fastify", "REST APIs", "OpenAPI", "Maven"] },
-      { "title": "Frontend", "skills": ["React", "Angular", "Vue.js", "Next.js", "TypeScript", "Vite", "HTML", "CSS"] },
-      { "title": "Data & Architecture", "skills": ["PostgreSQL", "Oracle", "PL/SQL", "MongoDB", "IndexedDB", "Flyway", "Ports and Adapters"] },
-      { "title": "Graphics & Interactive", "skills": ["WebGL2", "GLSL", "Phaser", "Monaco Editor", "Web Workers", "Unity", "C#"] },
-      { "title": "AI & Documents", "skills": ["RAG", "OCR", "Tesseract.js", "PDF.js", "BYOK integrations", "Structured extraction"] },
-      { "title": "Delivery", "skills": ["Git", "GitHub Actions", "Docker", "Vercel", "GitHub Pages", "Playwright", "Vitest"] }
-    ],
-    "footer": "© 2026 Oguz Kaan Dere. Built with Next.js, TypeScript, and Tailwind."
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "Software engineering with a product and systems perspective.",
+      "photoAlt": "Portrait of Oguz Kaan Dere",
+      "paragraphs": [
+        "I am a software developer with a Biomedical Engineering background and professional experience in enterprise frontend systems, Java/JavaScript full-stack work and hospital software.",
+        "My recent work focuses on AI-assisted products, local-first document workflows, RAG, OCR and interactive systems. I prefer explicit constraints, reviewable data and interfaces that help users make the final decision rather than hiding it behind automation.",
+        "During my transition to Germany, I focused on German language development, job-market alignment and building targeted engineering and game portfolio projects."
+      ],
+      "principlesEyebrow": "Product thinking",
+      "principlesTitle": "How I turn an idea into a working system",
+      "principles": [
+        "Model vague real-world problems as explicit data structures, rules and review flows.",
+        "Constrain AI with sources, schemas and clear refusal or uncertainty behavior.",
+        "Separate retrieval, user data, AI explanation and the final user decision.",
+        "Prefer local-first and BYOK patterns when user documents are sensitive.",
+        "Build MVPs that are demoable, deployable and explainable."
+      ],
+      "experienceEyebrow": "Background",
+      "experienceTitle": "Experience",
+      "skillsEyebrow": "Working set",
+      "skillsTitle": "Skills",
+      "experiences": [
+        {
+          "title": "Independent AI Product Builder / Portfolio Sprint",
+          "company": "Independent",
+          "date": "2025–Present",
+          "responsibilities": [
+            "Building local-first AI-assisted products with React/TypeScript, RAG, OCR, BYOK AI and document extraction.",
+            "Developing practical decision-support tools and controlled AI interaction systems with deployable portfolio scope."
+          ],
+          "technologies": ["React", "TypeScript", "Vite", "Next.js", "Tailwind", "IndexedDB", "pdfjs", "Tesseract.js", "RAG", "BYOK AI", "Vercel"],
+          "note": "During my transition to Germany, I focused on German language development, job-market alignment and focused portfolio products."
+        },
+        {
+          "title": "Full Stack / Frontend Developer",
+          "company": "Ekinoks Software",
+          "date": "Dec 2022–Dec 2024",
+          "responsibilities": [
+            "Developed enterprise Angular/TypeScript frontend features across complex UI modules, forms, state and API integration.",
+            "Worked in a professional software team on maintainable implementation, debugging and iterative product improvements."
+          ],
+          "technologies": ["Angular", "TypeScript", "RxJS", "Kendo UI", "JavaScript", "REST", "Git"]
+        },
+        {
+          "title": "Full Stack Developer",
+          "company": "Fonet Software",
+          "date": "May 2021–Nov 2022",
+          "responsibilities": [
+            "Developed features for a hospital information management system in a database-backed enterprise environment.",
+            "Worked across Java/JavaScript services, bug fixing and production-oriented maintenance."
+          ],
+          "technologies": ["Java", "JavaScript", "ExtJS", "SQL/Oracle", "Git"]
+        },
+        {
+          "title": "Game Developer / Incubation",
+          "company": "ATOM / METU",
+          "date": "2019–2020",
+          "responsibilities": [
+            "Built Unity prototypes and gameplay systems through game jams and incubation work.",
+            "Explored visual design, interaction loops and lightweight production workflows."
+          ],
+          "technologies": ["Unity", "C#", "Blender", "Photoshop", "Git"]
+        }
+      ],
+      "skillGroups": [
+        { "title": "Frontend", "skills": ["React", "Next.js", "Angular", "TypeScript", "Tailwind"] },
+        { "title": "Backend & Data", "skills": ["Java", "Node.js", "REST", "SQL", "PostgreSQL", "Oracle"] },
+        { "title": "AI & Product", "skills": ["RAG", "OCR", "BYOK AI", "Prompt/system design", "Document extraction"] },
+        { "title": "Interactive", "skills": ["Unity", "Godot", "Phaser", "WebGL", "Game systems"] },
+        { "title": "Domain", "skills": ["Biomedical Engineering", "Hospital software", "MedTech interest"] }
+      ]
+    }
   }
 }
