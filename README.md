@@ -1,58 +1,48 @@
-# Oguz Kaan Dere Portfolio
+# Oguz Kaan Dere — Engineering & Games
 
-Personal portfolio for a full-stack engineer working across Java/Spring backend systems, performance-conscious React architecture, resilient data flows, controlled AI products, and deterministic browser-based experiences.
+Personal portfolio for [Oguz Kaan Dere](https://okdere.com), presenting one body of work through two distinct disciplines: precise software engineering and atmospheric interactive games.
 
-**Live site:** https://okdere.com
+## Portfolio Architecture
 
-## Featured engineering projects
+- **Work** — a split Engineering/Games introduction and selected project overview
+- **Engineering** — LedgerFlow, Weather with Shaders, context-api-but-it-scales and selected AI-assisted product work
+- **Games** — Night Soup, Swarm Script, Gladiator Arena and Schleimer
+- **About** — background, product principles, experience and technical skills
+- **EN/DE** — locale-aware routes and professional English/German content with `next-intl`
 
-- **LedgerFlow** — Java microservice architecture, PostgreSQL, immutable ledger, pessimistic locking, reconciliation, OpenAPI, integration testing, and ADRs.
-- **context-api-but-it-scales** — measured React rendering behavior, `useSyncExternalStore`, selectors, persistence, cross-tab synchronization, tests, and CI.
-- **Yet Another Weather App — but with shaders** — typed weather pipeline, stale-while-revalidate cache, race protection, WebGL2/GLSL rendering, reduced motion, and GPU lifecycle cleanup.
-- **Swarm Script** — programmable swarm roguelite with a custom DSL, safe interpreter, deterministic worker simulation, Phaser, and Monaco Editor.
-- **Germany Path Finder** — local-first, source-bound RAG decision support with citations and uncertainty handling.
-- **Admission Fit Checker** — defensive PDF/OCR extraction, typed validation, human review, and explainable admission-fit analysis.
+## Screenshots
 
-## Site structure
+![Split Engineering and Games homepage](docs/assets/home.png)
 
-- Recruiter-focused project-first content flow
-- English and German localization through `next-intl`
-- Responsive project and experience cards
-- Honest project statuses and direct live-demo/GitHub links
-- Downloadable CV, LinkedIn, and GitHub access
-- Minimal dark visual system with keyboard-accessible navigation
+![Games project presentation](docs/assets/games.png)
 
 ## Stack
 
-- Next.js 14
-- React 18
-- TypeScript
-- Tailwind CSS
+- Next.js App Router
+- React and TypeScript
+- Tailwind CSS with a focused global visual system
 - next-intl
 - Vercel
 
-## Run locally
+Project facts and links are centralized in `src/data/projects.ts`; localized editorial content lives in `messages/en.json` and `messages/de.json`.
+
+## Run Locally
 
 ```bash
-npm ci
+npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`.
-
-## Build
+Quality checks:
 
 ```bash
+npm run lint
+npm run typecheck
 npm run build
 ```
 
-## Assets
-
-The site expects:
-
-- `public/profile-oguz.jpg`
-- `public/Oguz_Kaan_Dere_CV.pdf`
+The site expects `public/profile-oguz.jpg` and `public/Oguz_Kaan_Dere_CV.pdf`. Production metadata, canonicals, sitemap and robots target `https://okdere.com`.
 
 ## Deployment
 
-The `master` branch is connected to Vercel and deploys through the standard Next.js build flow. Production is served at `https://okdere.com`; legacy Vercel hostnames permanently redirect to the matching path on the canonical domain.
+Vercel uses npm and the standard Next.js production build configured in `vercel.json`.

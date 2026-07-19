@@ -1,0 +1,15 @@
+stateDiagram-v2
+    [*] --> PENDING
+    PENDING --> FUNDS_RESERVED: FundsReserved
+    PENDING --> REJECTED: FundsReservationFailed
+    FUNDS_RESERVED --> RISK_APPROVED: RiskApproved
+    FUNDS_RESERVED --> REJECTED: RiskRejected
+    RISK_APPROVED --> SETTLING: SettlementRequested
+    SETTLING --> COMPLETED: FundsSettled
+    SETTLING --> COMPENSATING: SettlementFailed
+    COMPENSATING --> REJECTED: FundsReleased
+    PENDING --> EXPIRED: Processing timeout
+    FUNDS_RESERVED --> COMPENSATING: Processing timeout
+    COMPLETED --> [*]
+    REJECTED --> [*]
+    EXPIRED --> [*]
