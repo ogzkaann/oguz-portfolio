@@ -1,14 +1,22 @@
 # Oguz Kaan Dere — Engineering & Games
 
-Personal portfolio for [Oguz Kaan Dere](https://okdere.com), presenting one body of work through two distinct disciplines: precise software engineering and atmospheric interactive games.
+Personal portfolio for [Oguz Kaan Dere](https://okdere.com), presenting software engineering, independent products, and technical game work through one bilingual site.
 
-## Portfolio Architecture
+## Current portfolio story
 
-- **Work** — a split Engineering/Games introduction and selected project overview
-- **Engineering** — LedgerFlow, Weather with Shaders, context-api-but-it-scales and selected AI-assisted product work
-- **Games** — Night Soup, Swarm Script, Gladiator Arena and Schleimer
-- **About** — background, product principles, experience and technical skills
-- **EN/DE** — locale-aware routes and professional English/German content with `next-intl`
+- **LedgerFlow** — completed Java microservice case study with Kafka workflows, PostgreSQL service ownership, Redis, Keycloak, observability, and a React operations console
+- **Tip Tracker** — private native Android product being prepared for Google Play
+- **Frontend systems** — measured React architecture and WebGL-driven product work
+- **AI-assisted products** — local-first RAG, OCR, document extraction, and BYOK workflows
+- **Games** — Night Soup, Swarm Script, Gladiator Arena, and Schleimer
+- **EN/DE** — locale-aware routes and professional English/German editorial content with `next-intl`
+
+## Site structure
+
+- **Work** — split Engineering/Games introduction and selected project overview
+- **Engineering** — backend platforms, Android products, frontend architecture, and controlled AI workflows
+- **Games** — narrative systems, deterministic simulations, and playable prototypes
+- **About** — professional background, engineering principles, experience, and current working set
 
 ## Screenshots
 
@@ -21,12 +29,12 @@ Personal portfolio for [Oguz Kaan Dere](https://okdere.com), presenting one body
 - Next.js App Router
 - React and TypeScript
 - Tailwind CSS with a focused global visual system
-- next-intl
-- Vercel
+- `next-intl` for English and German content
+- Vercel deployment
 
-Project facts and links are centralized in `src/data/projects.ts`; localized editorial content lives in `messages/en.json` and `messages/de.json`.
+Project facts, status, stack, media, and links are centralized in `src/data/projects.ts`. Localized editorial content lives in `messages/en.json` and `messages/de.json`.
 
-## Run Locally
+## Run locally
 
 ```bash
 npm install
@@ -41,7 +49,7 @@ npm run typecheck
 npm run build
 ```
 
-The site expects `public/profile-oguz.jpg` and `public/Oguz_Kaan_Dere_CV.pdf`. Production metadata, canonicals, sitemap and robots target `https://okdere.com`.
+The site expects `public/profile-oguz.jpg` and `public/Oguz_Kaan_Dere_CV.pdf`. Production metadata, canonicals, sitemap, and robots target `https://okdere.com`.
 
 ## Deployment
 
