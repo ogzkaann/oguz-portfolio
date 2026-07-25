@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Tip Tracker Android product preview</title>
+  <desc id="desc">A dark graphite mobile dashboard showing monthly earnings, work time, hourly rate, and recent shifts.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111715"/>
+      <stop offset="1" stop-color="#1d2925"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#63e6a7"/>
+      <stop offset="1" stop-color="#24b77b"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1070" cy="90" r="250" fill="#2b9f74" opacity="0.08"/>
+  <circle cx="90" cy="710" r="290" fill="#63e6a7" opacity="0.05"/>
+
+  <g transform="translate(105 118)">
+    <text x="0" y="0" fill="#63e6a7" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">NATIVE ANDROID PRODUCT</text>
+    <text x="0" y="72" fill="#f4f8f6" font-family="Arial, sans-serif" font-size="66" font-weight="750">Tip Tracker</text>
+    <text x="0" y="118" fill="#a9bbb4" font-family="Arial, sans-serif" font-size="28">Offline-first shift and earnings ledger</text>
+
+    <g transform="translate(0 185)">
+      <rect width="410" height="82" rx="18" fill="#202c28" stroke="#334740"/>
+      <circle cx="42" cy="41" r="17" fill="url(#accent)"/>
+      <path d="M34 42l6 6 12-15" fill="none" stroke="#10241c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="76" y="34" fill="#eff7f3" font-family="Arial, sans-serif" font-size="20" font-weight="700">Fast shift entry</text>
+      <text x="76" y="58" fill="#96aaa2" font-family="Arial, sans-serif" font-size="15">Time, breaks, tips and deductions</text>
+    </g>
+
+    <g transform="translate(0 285)">
+      <rect width="410" height="82" rx="18" fill="#202c28" stroke="#334740"/>
+      <circle cx="42" cy="41" r="17" fill="url(#accent)"/>
+      <path d="M34 42l6 6 12-15" fill="none" stroke="#10241c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="76" y="34" fill="#eff7f3" font-family="Arial, sans-serif" font-size="20" font-weight="700">Private by default</text>
+      <text x="76" y="58" fill="#96aaa2" font-family="Arial, sans-serif" font-size="15">Room + DataStore, no account required</text>
+    </g>
+
+    <g transform="translate(0 385)">
+      <rect width="410" height="82" rx="18" fill="#202c28" stroke="#334740"/>
+      <circle cx="42" cy="41" r="17" fill="url(#accent)"/>
+      <path d="M34 42l6 6 12-15" fill="none" stroke="#10241c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="76" y="34" fill="#eff7f3" font-family="Arial, sans-serif" font-size="20" font-weight="700">Useful exports</text>
+      <text x="76" y="58" fill="#96aaa2" font-family="Arial, sans-serif" font-size="15">German and English A4 timesheets</text>
+    </g>
+
+    <rect x="0" y="505" width="268" height="54" rx="27" fill="url(#accent)"/>
+    <text x="134" y="539" text-anchor="middle" fill="#0b2018" font-family="Arial, sans-serif" font-size="18" font-weight="800">GOOGLE PLAY PREP</text>
+  </g>
+
+  <g transform="translate(655 62)" filter="url(#shadow)">
+    <rect width="380" height="680" rx="54" fill="#090d0c" stroke="#455a52" stroke-width="3"/>
+    <rect x="17" y="17" width="346" height="646" rx="42" fill="#121a17"/>
+    <rect x="135" y="29" width="110" height="24" rx="12" fill="#070a09"/>
+
+    <g transform="translate(42 86)">
+      <text x="0" y="0" fill="#9eb1a9" font-family="Arial, sans-serif" font-size="16">JULY 2026</text>
+      <text x="0" y="43" fill="#f4f8f6" font-family="Arial, sans-serif" font-size="32" font-weight="750">Your month</text>
+      <circle cx="275" cy="27" r="23" fill="#1f2b27"/>
+      <path d="M264 27h22M275 16v22" stroke="#63e6a7" stroke-width="3" stroke-linecap="round"/>
+
+      <rect x="0" y="76" width="296" height="150" rx="24" fill="#1c2824" stroke="#2f443c"/>
+      <text x="22" y="108" fill="#98aba3" font-family="Arial, sans-serif" font-size="15">TAKE-HOME</text>
+      <text x="22" y="156" fill="#f4f8f6" font-family="Arial, sans-serif" font-size="42" font-weight="760">€ 1,284.50</text>
+      <text x="22" y="193" fill="#63e6a7" font-family="Arial, sans-serif" font-size="16" font-weight="700">+12% from last month</text>
+
+      <g transform="translate(0 246)">
+        <rect width="142" height="104" rx="20" fill="#17211e"/>
+        <text x="18" y="30" fill="#90a49c" font-family="Arial, sans-serif" font-size="14">WORK TIME</text>
+        <text x="18" y="69" fill="#f0f5f3" font-family="Arial, sans-serif" font-size="28" font-weight="730">72h 30m</text>
+        <text x="18" y="91" fill="#71847d" font-family="Arial, sans-serif" font-size="13">11 shifts</text>
+      </g>
+
+      <g transform="translate(154 246)">
+        <rect width="142" height="104" rx="20" fill="#17211e"/>
+        <text x="18" y="30" fill="#90a49c" font-family="Arial, sans-serif" font-size="14">TRUE HOURLY</text>
+        <text x="18" y="69" fill="#f0f5f3" font-family="Arial, sans-serif" font-size="28" font-weight="730">€ 17.72</text>
+        <text x="18" y="91" fill="#71847d" font-family="Arial, sans-serif" font-size="13">after deductions</text>
+      </g>
+
+      <text x="0" y="391" fill="#f2f7f5" font-family="Arial, sans-serif" font-size="20" font-weight="720">Recent shifts</text>
+
+      <g transform="translate(0 414)">
+        <rect width="296" height="72" rx="18" fill="#18231f"/>
+        <circle cx="34" cy="36" r="17" fill="#243b32"/>
+        <path d="M28 36h12M34 30v12" stroke="#63e6a7" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="62" y="29" fill="#eef5f2" font-family="Arial, sans-serif" font-size="16" font-weight="700">Courier</text>
+        <text x="62" y="51" fill="#81968d" font-family="Arial, sans-serif" font-size="13">Today · 5h 15m</text>
+        <text x="274" y="41" text-anchor="end" fill="#eff8f4" font-family="Arial, sans-serif" font-size="18" font-weight="750">€ 96.40</text>
+      </g>
+
+      <g transform="translate(0 498)">
+        <rect width="296" height="72" rx="18" fill="#18231f"/>
+        <circle cx="34" cy="36" r="17" fill="#243b32"/>
+        <path d="M27 40h14M29 31h10" stroke="#63e6a7" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="62" y="29" fill="#eef5f2" font-family="Arial, sans-serif" font-size="16" font-weight="700">Café</text>
+        <text x="62" y="51" fill="#81968d" font-family="Arial, sans-serif" font-size="13">Yesterday · 6h 00m</text>
+        <text x="274" y="41" text-anchor="end" fill="#eff8f4" font-family="Arial, sans-serif" font-size="18" font-weight="750">€ 108.00</text>
+      </g>
+    </g>
+  </g>
+</svg>
