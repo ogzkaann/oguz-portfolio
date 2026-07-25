@@ -2,19 +2,19 @@
   "Metadata": {
     "work": {
       "title": "Oguz Kaan Dere — Software Engineering & Games",
-      "description": "Portfolio of Oguz Kaan Dere: full-stack engineering, AI-assisted product work, interactive systems and game prototypes."
+      "description": "Portfolio of Oguz Kaan Dere: Java systems, frontend architecture, native Android products, controlled AI workflows, and technical games."
     },
     "engineering": {
       "title": "Engineering — Oguz Kaan Dere",
-      "description": "Selected backend, frontend and AI-assisted product engineering by Oguz Kaan Dere."
+      "description": "Selected Java, frontend, Android, and AI-assisted product engineering by Oguz Kaan Dere."
     },
     "games": {
       "title": "Games — Oguz Kaan Dere",
-      "description": "Game systems, prototypes and interactive work by Oguz Kaan Dere, including Night Soup and Swarm Script."
+      "description": "Game systems and interactive work by Oguz Kaan Dere, including Night Soup and Swarm Script."
     },
     "about": {
       "title": "About — Oguz Kaan Dere",
-      "description": "Software development experience, product approach and technical background of Oguz Kaan Dere."
+      "description": "Software development experience, product approach, and technical background of Oguz Kaan Dere."
     }
   },
   "Site": {
@@ -39,6 +39,9 @@
   "Portfolio": {
     "statusLabels": {
       "live": "Live",
+      "completed": "Completed system",
+      "playStorePrep": "Google Play preparation",
+      "verticalSlice": "Complete vertical slice",
       "documented": "Documented build",
       "preProduction": "Pre-production",
       "prototype": "Prototype"
@@ -55,13 +58,13 @@
       "engineering": {
         "eyebrow": "Software systems",
         "title": "Engineering",
-        "description": "Backend systems, frontend architecture and practical AI-assisted products.",
+        "description": "Java platforms, frontend architecture, native Android products, and controlled AI workflows.",
         "cta": "Explore Engineering"
       },
       "games": {
         "eyebrow": "Interactive worlds",
         "title": "Games",
-        "description": "Atmospheric concepts, deterministic simulations and playable prototypes.",
+        "description": "Atmospheric narratives, deterministic simulations, and playable systems.",
         "cta": "Explore Games"
       },
       "tabs": {
@@ -76,35 +79,48 @@
     },
     "engineering": {
       "eyebrow": "Engineering",
-      "title": "Systems that make their boundaries visible.",
-      "intro": "I work across Java backends, typed frontend architecture and document-heavy AI products. The common thread is explicit state, reviewable decisions and software that explains what it is doing.",
-      "supporting": "The projects below separate implemented behavior from planned architecture and keep sensitive workflows local where that tradeoff makes sense.",
+      "title": "Products with explicit rules and visible proof.",
+      "intro": "I work across Java microservices, typed frontend architecture, native Android products, and document-heavy AI workflows. The common thread is explicit state, resilient boundaries, and software that can explain what it is doing.",
+      "supporting": "The projects below separate implemented behavior from future scope and use contracts, tests, and operational evidence instead of relying on architecture claims alone.",
       "featuredLabel": "Featured engineering project",
       "projectsEyebrow": "Selected systems",
-      "projectsTitle": "Frontend, AI product and interaction architecture"
+      "projectsTitle": "Backend, Android, frontend, and AI product engineering"
     },
     "games": {
       "eyebrow": "Games",
-      "title": "Atmosphere, rules and readable simulation.",
+      "title": "Atmosphere, rules, and readable simulation.",
       "intro": "My game work moves between narrative systems and technical prototypes. I am interested in worlds with a strong point of view and mechanics whose internal logic remains legible to the player.",
-      "supporting": "Night Soup is currently a pre-production concept. Swarm Script and Schleimer are playable; Gladiator Arena remains a prototype without public media.",
+      "supporting": "Night Soup now has a complete Night 1 vertical slice. Swarm Script and Schleimer are playable; Gladiator Arena remains an earlier prototype.",
       "featuredLabel": "Featured game project",
       "projectsEyebrow": "Playable and experimental work",
-      "projectsTitle": "Technical games and prototypes"
+      "projectsTitle": "Narrative systems, simulations, and technical games"
     },
     "projects": {
       "ledgerflow": {
         "title": "LedgerFlow",
         "eyebrow": "Featured engineering project",
-        "hook": "A Java microservice portfolio system for resilient account and ledger workflows.",
-        "role": "System design and backend engineering",
+        "hook": "A complete Java microservice platform demonstrating a durable, eventually consistent bank-transfer workflow.",
+        "role": "System design, backend engineering, and operations UI",
         "contributions": [
-          "Built a production-style Account Service with immutable ledger history and reconciliation.",
-          "Used ports and adapters, PostgreSQL row locking, Flyway migrations and an OpenAPI 3.1 contract.",
-          "Documented service boundaries, failure handling and the planned event-driven transfer workflow."
+          "Implemented account, transfer, risk, and notification services with independent PostgreSQL ownership and guarded workflow state.",
+          "Built Kafka orchestration with transactional outboxes, idempotent consumers, reservations, settlement, compensation, and Redis-backed protective controls.",
+          "Added Keycloak authorization, observability, generated API clients, a role-aware React console, and real-stack Playwright verification."
         ],
-        "mediaAlt": "LedgerFlow transfer state machine from the architecture documentation",
-        "note": "The diagram shows the documented transfer design. The Account Service is operational; broader cross-service workflows remain planned."
+        "mediaAlt": "LedgerFlow transfer lifecycle from pending through completion or compensated rejection",
+        "note": "Phases 0–5 are implemented. Production deployment, real banking integrations, and regulatory certification remain explicitly outside the portfolio scope."
+      },
+      "tipTracker": {
+        "title": "Tip Tracker — Earnings Log",
+        "eyebrow": "Native Android product",
+        "hook": "An offline-first shift and earnings ledger for couriers, hospitality workers, freelancers, and people working across multiple jobs.",
+        "role": "Product design and native Android engineering",
+        "contributions": [
+          "Designed fast accessible shift entry with job presets, paired wheel controls, breaks, deductions, tips, and trustworthy hourly-rate calculations.",
+          "Built local persistence with Room migrations and DataStore, plus calendar history, monthly insights, and conflict-safe editing.",
+          "Generated private German/English A4 timesheets locally and prepared the product architecture for a Google Play release without accounts or tracking."
+        ],
+        "mediaAlt": "Tip Tracker mobile dashboard with monthly earnings, work time, and recent shifts",
+        "note": "Private commercial repository. The current focus is release-candidate scope, real-device QA, store assets, and Google Play publishing."
       },
       "weatherShaders": {
         "title": "Weather with Shaders",
@@ -114,7 +130,7 @@
         "contributions": [
           "Mapped normalized Open-Meteo data to bounded shader uniforms.",
           "Kept the renderer outside React with explicit lifecycle cleanup.",
-          "Built accessible search, geolocation, units and resilient forecast caching."
+          "Built accessible search, geolocation, units, and resilient forecast caching."
         ],
         "mediaAlt": "Berlin forecast rendered as a blue WebGL atmosphere"
       },
@@ -126,7 +142,7 @@
         "contributions": [
           "Implemented selector subscriptions with useSyncExternalStore.",
           "Measured committed component renders without contaminating the result.",
-          "Added bounded history, safe persistence and loop-free cross-tab sync."
+          "Added bounded history, safe persistence, and loop-free cross-tab synchronization."
         ],
         "mediaAlt": "Rendering laboratory comparing naive Context with an optimized store"
       },
@@ -136,8 +152,8 @@
         "hook": "A local-first RAG tool for comparing Germany residence and career paths against curated official sources.",
         "role": "Product design and full-stack implementation",
         "contributions": [
-          "Separated official source retrieval, user data and AI explanation.",
-          "Added PDF ingestion, citations and explicit uncertainty handling.",
+          "Separated official source retrieval, user data, and AI explanation.",
+          "Added PDF ingestion, citations, and explicit uncertainty handling.",
           "Kept documents and BYOK credentials local to the browser."
         ],
         "mediaAlt": "Germany Path Finder command center with route comparison and sources"
@@ -158,26 +174,26 @@
         "title": "Night Soup",
         "eyebrow": "Atmospheric flagship game",
         "hook": "A rural-gothic cooking mystery set in a rain-soaked Oregon diner.",
-        "role": "Game direction, systems design and narrative design",
+        "role": "Game direction, systems design, and narrative design",
         "contributions": [
-          "Designed an active cooking, trust and information-reveal loop.",
-          "Structured clue collection as source-aware deductions rather than hidden-object hunting.",
-          "Defined a signal-based Godot architecture with Resource/JSON-authored content."
+          "Built a complete Night 1 flow from arrival and diner preparation through cooking, cleanup, evidence, deduction, and multiple endings.",
+          "Implemented data-driven dialogue, clue and evidence registries, a physical notebook interface, and softlock-safe deduction rules.",
+          "Added versioned checkpoint saves, persistent settings, EN/TR localization, and headless verification across the production flow."
         ],
-        "mediaAlt": "Night Soup concept scene inside a warm diner on a rainy Oregon night",
-        "note": "Current status: approved GDD and visual direction; no playable build is claimed."
+        "mediaAlt": "Night Soup scene inside a warm diner on a rainy Oregon night",
+        "note": "Current status: complete Night 1 vertical slice with placeholder production art and audio. The next milestone is the production asset pipeline."
       },
       "swarmScript": {
         "title": "Swarm Script",
         "eyebrow": "Featured technical game",
         "hook": "Program a three-robot squad with a safe rule language, then watch the logic fight through a deterministic arena.",
-        "role": "Game systems, simulation and frontend engineering",
+        "role": "Game systems, simulation, and frontend engineering",
         "contributions": [
-          "Built a tokenizer, parser, typed AST and budgeted interpreter without eval.",
-          "Separated a deterministic 30 Hz simulation into a typed Web Worker protocol.",
+          "Built a tokenizer, parser, typed AST, and budgeted interpreter without eval.",
+          "Separated a deterministic fixed-step simulation into a typed Web Worker protocol.",
           "Used a latest-only snapshot mailbox to keep Phaser rendering responsive at higher simulation speeds."
         ],
-        "mediaAlt": "Swarm Script interface with behavior editor, tactical arena and deployment controls"
+        "mediaAlt": "Swarm Script interface with behavior editor, tactical arena, and deployment controls"
       },
       "gladiatorArena": {
         "title": "Gladiator Arena",
@@ -185,7 +201,7 @@
         "hook": "An arena-combat prototype with persistent roster creation and simulated battles.",
         "role": "Gameplay and persistence prototype",
         "contributions": [
-          "Structured fighter creation, selection and upgrade flow.",
+          "Structured fighter creation, selection, and upgrade flow.",
           "Simulated battles with winner tracking.",
           "Stored persistent roster state with JSON saves."
         ],
@@ -195,9 +211,9 @@
         "title": "Schleimer",
         "eyebrow": "AI dialogue game",
         "hook": "A short persuasion game where local rules score the interview and AI writes only the boss dialogue.",
-        "role": "Product design, game loop and frontend engineering",
+        "role": "Product design, game loop, and frontend engineering",
         "contributions": [
-          "Kept scoring, endings and hidden skill tags deterministic and local.",
+          "Kept scoring, endings, and hidden skill tags deterministic and local.",
           "Used BYOK Gemini for optional dialogue with a playable mock fallback.",
           "Designed editable response choices around a compact multi-ending loop."
         ],
@@ -209,18 +225,18 @@
       "title": "Software engineering with a product and systems perspective.",
       "photoAlt": "Portrait of Oguz Kaan Dere",
       "paragraphs": [
-        "I am a software developer with a Biomedical Engineering background and professional experience in enterprise frontend systems, Java/JavaScript full-stack work and hospital software.",
-        "My recent work focuses on AI-assisted products, local-first document workflows, RAG, OCR and interactive systems. I prefer explicit constraints, reviewable data and interfaces that help users make the final decision rather than hiding it behind automation.",
-        "During my transition to Germany, I focused on German language development, job-market alignment and building targeted engineering and game portfolio projects."
+        "I am a software developer with a Biomedical Engineering background and professional experience in enterprise frontend systems, Java/JavaScript full-stack work, and hospital software.",
+        "My current work spans Java microservices, native Android products, typed frontend architecture, local-first document workflows, and controlled AI systems. I prefer explicit constraints, reviewable data, and interfaces that keep the final decision visible.",
+        "Based in Düsseldorf, I am building deployable products that strengthen both my German-market engineering profile and my independent product portfolio."
       ],
       "principlesEyebrow": "Product thinking",
       "principlesTitle": "How I turn an idea into a working system",
       "principles": [
-        "Model vague real-world problems as explicit data structures, rules and review flows.",
-        "Constrain AI with sources, schemas and clear refusal or uncertainty behavior.",
-        "Separate retrieval, user data, AI explanation and the final user decision.",
-        "Prefer local-first and BYOK patterns when user documents are sensitive.",
-        "Build MVPs that are demoable, deployable and explainable."
+        "Model vague real-world problems as explicit data structures, rules, and review flows.",
+        "Design failure paths, persistence, and recovery before polishing the happy path.",
+        "Constrain AI with sources, schemas, and clear uncertainty behavior.",
+        "Prefer local-first patterns when user data does not need a server.",
+        "Ship products with tests, CI, documentation, and honest scope boundaries."
       ],
       "experienceEyebrow": "Background",
       "experienceTitle": "Experience",
@@ -228,23 +244,23 @@
       "skillsTitle": "Skills",
       "experiences": [
         {
-          "title": "Independent AI Product Builder / Portfolio Sprint",
+          "title": "Independent Product Builder",
           "company": "Independent",
           "date": "2025–Present",
           "responsibilities": [
-            "Building local-first AI-assisted products with React/TypeScript, RAG, OCR, BYOK AI and document extraction.",
-            "Developing practical decision-support tools and controlled AI interaction systems with deployable portfolio scope."
+            "Building Java platforms, native Android products, local-first AI tools, document workflows, and interactive systems.",
+            "Turning focused product ideas into tested, deployable, and explainable releases."
           ],
-          "technologies": ["React", "TypeScript", "Vite", "Next.js", "Tailwind", "IndexedDB", "pdfjs", "Tesseract.js", "RAG", "BYOK AI", "Vercel"],
-          "note": "During my transition to Germany, I focused on German language development, job-market alignment and focused portfolio products."
+          "technologies": ["Java", "Spring Boot", "Kafka", "Kotlin", "Jetpack Compose", "React", "TypeScript", "PostgreSQL", "Docker", "Playwright"],
+          "note": "Current product focus: preparing Tip Tracker for Google Play while maintaining LedgerFlow as the flagship engineering case study."
         },
         {
           "title": "Full Stack / Frontend Developer",
           "company": "Ekinoks Software",
           "date": "Dec 2022–Dec 2024",
           "responsibilities": [
-            "Developed enterprise Angular/TypeScript frontend features across complex UI modules, forms, state and API integration.",
-            "Worked in a professional software team on maintainable implementation, debugging and iterative product improvements."
+            "Developed enterprise Angular/TypeScript frontend features across complex UI modules, forms, state, and API integration.",
+            "Worked in a professional software team on maintainable implementation, debugging, and iterative product improvements."
           ],
           "technologies": ["Angular", "TypeScript", "RxJS", "Kendo UI", "JavaScript", "REST", "Git"]
         },
@@ -254,7 +270,7 @@
           "date": "May 2021–Nov 2022",
           "responsibilities": [
             "Developed features for a hospital information management system in a database-backed enterprise environment.",
-            "Worked across Java/JavaScript services, bug fixing and production-oriented maintenance."
+            "Worked across Java/JavaScript services, bug fixing, and production-oriented maintenance."
           ],
           "technologies": ["Java", "JavaScript", "ExtJS", "SQL/Oracle", "Git"]
         },
@@ -264,17 +280,19 @@
           "date": "2019–2020",
           "responsibilities": [
             "Built Unity prototypes and gameplay systems through game jams and incubation work.",
-            "Explored visual design, interaction loops and lightweight production workflows."
+            "Explored visual design, interaction loops, and lightweight production workflows."
           ],
           "technologies": ["Unity", "C#", "Blender", "Photoshop", "Git"]
         }
       ],
       "skillGroups": [
-        { "title": "Frontend", "skills": ["React", "Next.js", "Angular", "TypeScript", "Tailwind"] },
-        { "title": "Backend & Data", "skills": ["Java", "Node.js", "REST", "SQL", "PostgreSQL", "Oracle"] },
-        { "title": "AI & Product", "skills": ["RAG", "OCR", "BYOK AI", "Prompt/system design", "Document extraction"] },
-        { "title": "Interactive", "skills": ["Unity", "Godot", "Phaser", "WebGL", "Game systems"] },
-        { "title": "Domain", "skills": ["Biomedical Engineering", "Hospital software", "MedTech interest"] }
+        {"title": "Backend", "skills": ["Java", "Spring Boot", "Kafka", "REST", "OpenAPI", "PostgreSQL"]},
+        {"title": "Frontend", "skills": ["React", "Next.js", "Angular", "TypeScript", "Vite"]},
+        {"title": "Android", "skills": ["Kotlin", "Jetpack Compose", "Room", "DataStore", "Hilt"]},
+        {"title": "Delivery", "skills": ["Docker", "GitHub Actions", "Testcontainers", "Playwright", "Keycloak"]},
+        {"title": "AI & Documents", "skills": ["RAG", "OCR", "BYOK AI", "PDF workflows", "Structured extraction"]},
+        {"title": "Interactive", "skills": ["Godot", "Unity", "Phaser", "WebGL", "Game systems"]},
+        {"title": "Domain", "skills": ["Biomedical Engineering", "Hospital software", "MedTech interest"]}
       ]
     }
   }
