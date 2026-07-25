@@ -2,12 +2,16 @@ export type ProjectWorld = "engineering" | "games";
 
 export type ProjectStatus =
   | "live"
+  | "completed"
+  | "playStorePrep"
+  | "verticalSlice"
   | "documented"
   | "preProduction"
   | "prototype";
 
 export type ProjectId =
   | "ledgerflow"
+  | "tipTracker"
   | "weatherShaders"
   | "contextApi"
   | "germanyPathFinder"
