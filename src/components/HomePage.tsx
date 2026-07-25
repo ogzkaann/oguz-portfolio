@@ -81,6 +81,12 @@ export async function HomePage() {
             <span>{t("home.otherEngineering")}</span>
           </div>
           <ProjectRow
+            id="tipTracker"
+            copy={projectCopy(t.raw, "tipTracker")}
+            labels={labels}
+            statusLabel={statuses[projects.tipTracker.status]}
+          />
+          <ProjectRow
             id="weatherShaders"
             copy={projectCopy(t.raw, "weatherShaders")}
             labels={labels}
