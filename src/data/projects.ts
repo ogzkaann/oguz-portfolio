@@ -4,10 +4,19 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
   ledgerflow: {
     id: "ledgerflow",
     world: "engineering",
-    status: "documented",
+    status: "completed",
     featured: true,
     media: { src: "/media/ledgerflow-architecture.svg" },
-    stack: ["Java 25", "Spring Boot", "PostgreSQL", "Flyway", "OpenAPI 3.1"],
+    stack: [
+      "Java 25",
+      "Spring Boot",
+      "Kafka",
+      "PostgreSQL",
+      "Redis",
+      "Keycloak",
+      "React",
+      "Playwright",
+    ],
     links: [
       {
         kind: "architecture",
@@ -18,6 +27,23 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
         href: "https://github.com/ogzkaann/ledgerflow-banking-platform",
       },
     ],
+  },
+  tipTracker: {
+    id: "tipTracker",
+    world: "engineering",
+    status: "playStorePrep",
+    featured: true,
+    media: { src: "/media/tip-tracker.svg" },
+    stack: [
+      "Kotlin",
+      "Jetpack Compose",
+      "Room",
+      "DataStore",
+      "Hilt",
+      "Coroutines",
+      "Material 3",
+    ],
+    links: [],
   },
   weatherShaders: {
     id: "weatherShaders",
@@ -84,13 +110,19 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
   nightSoup: {
     id: "nightSoup",
     world: "games",
-    status: "preProduction",
+    status: "verticalSlice",
     featured: true,
     media: {
       src: "/media/night-soup.png",
       position: "46% center",
     },
-    stack: ["Godot 4.7.1", "GDScript", "2D pixel art", "Narrative systems"],
+    stack: [
+      "Godot 4.7.1",
+      "GDScript",
+      "Narrative systems",
+      "Save architecture",
+      "Headless QA",
+    ],
     links: [],
   },
   swarmScript: {
@@ -131,6 +163,7 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
 
 export const engineeringProjectIds: ProjectId[] = [
   "ledgerflow",
+  "tipTracker",
   "weatherShaders",
   "contextApi",
   "germanyPathFinder",
