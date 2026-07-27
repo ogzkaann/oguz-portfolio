@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { FiDownload, FiGithub, FiLinkedin, FiMenu, FiX } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMenu, FiX } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
+import { CvMenu } from "@/components/CvMenu";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const navigation = [
@@ -23,11 +24,6 @@ const utilityLinks = [
     key: "linkedin",
     href: "https://linkedin.com/in/oguz-kaan-dere",
     icon: FiLinkedin,
-  },
-  {
-    key: "cv",
-    href: "/Oguz_Kaan_Dere_CV.pdf",
-    icon: FiDownload,
   },
 ] as const;
 
@@ -74,6 +70,7 @@ export function SiteHeader() {
               <span>{t(`links.${key}`)}</span>
             </a>
           ))}
+          <CvMenu />
         </div>
 
         <button
@@ -110,6 +107,7 @@ export function SiteHeader() {
                 <span>{t(`links.${key}`)}</span>
               </a>
             ))}
+            <CvMenu />
           </div>
         </div>
       ) : null}

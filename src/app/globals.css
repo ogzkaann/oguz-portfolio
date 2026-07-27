@@ -186,6 +186,47 @@ a {
   height: 15px;
 }
 
+.cv-menu {
+  position: relative;
+}
+
+.cv-menu summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.cv-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.cv-menu-options {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  z-index: 60;
+  display: grid;
+  min-width: 180px;
+  border: 1px solid #3a4650;
+  background: #0d151c;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.cv-menu-options a {
+  display: block;
+  padding: 0.7rem 0.85rem;
+  color: #e8edf0;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.cv-menu-options a + a {
+  border-top: 1px solid #303b44;
+}
+
+.cv-menu-options a:hover {
+  background: #17232d;
+}
+
 .mobile-menu-button,
 .mobile-navigation {
   display: none;
@@ -1083,6 +1124,13 @@ a {
   gap: 0.35rem;
 }
 
+.site-footer .cv-menu-options {
+  top: auto;
+  bottom: calc(100% + 0.35rem);
+  display: grid;
+  gap: 0;
+}
+
 @media (max-width: 1180px) {
   .site-header-inner {
     grid-template-columns: minmax(190px, 1fr) auto minmax(230px, 1fr);
@@ -1204,6 +1252,30 @@ a {
     align-items: center;
     gap: 0.35rem;
     font-size: 0.78rem;
+  }
+
+  .mobile-utilities .cv-menu {
+    width: 100%;
+  }
+
+  .mobile-utilities .cv-menu summary {
+    color: var(--ink);
+  }
+
+  .mobile-utilities .cv-menu-options {
+    position: static;
+    margin-top: 0.45rem;
+    border-color: #c7cccf;
+    background: #e8eae8;
+    box-shadow: none;
+  }
+
+  .mobile-utilities .cv-menu-options a {
+    color: var(--ink);
+  }
+
+  .mobile-utilities .cv-menu-options a + a {
+    border-top-color: #c7cccf;
   }
 
   .split-hero {

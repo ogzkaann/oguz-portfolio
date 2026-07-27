@@ -32,7 +32,11 @@
     "links": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "cv": "CV"
+      "cv": "CV",
+      "resumes": {
+        "english": "English resume",
+        "german": "German resume"
+      }
     },
     "footer": "© 2026 Oguz Kaan Dere"
   },

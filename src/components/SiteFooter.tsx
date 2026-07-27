@@ -1,5 +1,6 @@
-import { FiDownload, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { getTranslations } from "next-intl/server";
+import { CvMenu } from "@/components/CvMenu";
 
 export async function SiteFooter() {
   const t = await getTranslations("Site");
@@ -20,10 +21,7 @@ export async function SiteFooter() {
           <FiLinkedin aria-hidden="true" />
           LinkedIn
         </a>
-        <a href="/Oguz_Kaan_Dere_CV.pdf" target="_blank" rel="noreferrer">
-          <FiDownload aria-hidden="true" />
-          CV
-        </a>
+        <CvMenu />
       </div>
     </footer>
   );
