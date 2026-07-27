@@ -75,12 +75,18 @@ a {
 }
 
 .site-header {
+  --header-split: 50%;
+
   position: sticky;
   top: 0;
   z-index: 50;
   min-height: var(--header-height);
   border-bottom: 1px solid rgba(105, 117, 128, 0.28);
-  background: linear-gradient(90deg, var(--paper) 0 50%, #080d12 50% 100%);
+  background: linear-gradient(
+    90deg,
+    var(--paper) 0 var(--header-split),
+    #080d12 var(--header-split) 100%
+  );
 }
 
 .site-header-inner {
@@ -115,6 +121,7 @@ a {
   padding: 0 1rem;
   font-size: 0.83rem;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .nav-link-work,

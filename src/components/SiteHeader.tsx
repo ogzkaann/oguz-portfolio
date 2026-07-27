@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { FiGithub, FiLinkedin, FiMenu, FiX } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -31,21 +31,66 @@ export function SiteHeader() {
   const t = useTranslations("Site");
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
+  const desktopNavRef = useRef<HTMLElement>(null);
+  const gamesLinkRef = useRef<HTMLAnchorElement>(null);
+
+  useLayoutEffect(() => {
+    const header = headerRef.current;
+    const desktopNav = desktopNavRef.current;
+    const gamesLink = gamesLinkRef.current;
+
+    if (!header || !desktopNav || !gamesLink) {
+      return;
+    }
+
+    const updateSplit = () => {
+      if (window.innerWidth < 900) {
+        header.style.removeProperty("--header-split");
+        return;
+      }
+
+      const headerRect = header.getBoundingClientRect();
+      const gamesRect = gamesLink.getBoundingClientRect();
+      header.style.setProperty(
+        "--header-split",
+        `${gamesRect.left - headerRect.left}px`,
+      );
+    };
+
+    updateSplit();
+
+    const resizeObserver = new ResizeObserver(updateSplit);
+    resizeObserver.observe(header);
+    resizeObserver.observe(desktopNav);
+    resizeObserver.observe(gamesLink);
+    window.addEventListener("resize", updateSplit);
+
+    return () => {
+      resizeObserver.disconnect();
+      window.removeEventListener("resize", updateSplit);
+    };
+  }, []);
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <header className="site-header">
+    <header ref={headerRef} className="site-header">
       <div className="site-header-inner">
         <Link href="/" className="wordmark" aria-label={t("homeLabel")}>
           OGUZ KAAN DERE
         </Link>
 
-        <nav className="desktop-nav" aria-label={t("navigationLabel")}>
+        <nav
+          ref={desktopNavRef}
+          className="desktop-nav"
+          aria-label={t("navigationLabel")}
+        >
           {navigation.map((item) => (
             <Link
               key={item.key}
+              ref={item.key === "games" ? gamesLinkRef : undefined}
               href={item.href}
               aria-current={isActive(item.href) ? "page" : undefined}
               className={`nav-link nav-link-${item.key}`}
