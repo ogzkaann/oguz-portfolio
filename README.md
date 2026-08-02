@@ -5,7 +5,7 @@ Personal portfolio for [Oguz Kaan Dere](https://okdere.com), presenting software
 ## Current portfolio story
 
 - **LedgerFlow** — completed Java microservice case study with Kafka workflows, PostgreSQL service ownership, Redis, Keycloak, observability, a React operations console, documented production boundaries, and release/load-test planning
-- **Tip Tracker** — proprietary native Android earnings product being prepared for Google Play, with a public recruiter-facing engineering showcase at [tip-tracker-showcase](https://github.com/ogzkaann/tip-tracker-showcase)
+- **Tip Tracker** — proprietary native Android earnings product through the pay-control and goals milestone, now being prepared for Google Play, with a public recruiter-facing engineering showcase at [tip-tracker-showcase](https://github.com/ogzkaann/tip-tracker-showcase)
 - **Frontend systems** — measured React architecture and WebGL-driven product work
 - **AI-assisted products** — local-first RAG, OCR, document extraction, BYOK workflows, and explicit evidence-integrity design
 - **Games** — Night Soup, Swarm Script, Gladiator Arena, and Schleimer
