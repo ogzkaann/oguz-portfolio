@@ -43,7 +43,12 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
       "Coroutines",
       "Material 3",
     ],
-    links: [],
+    links: [
+      {
+        kind: "github",
+        href: "https://github.com/ogzkaann/tip-tracker-showcase",
+      },
+    ],
   },
   weatherShaders: {
     id: "weatherShaders",
