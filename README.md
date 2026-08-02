@@ -4,10 +4,10 @@ Personal portfolio for [Oguz Kaan Dere](https://okdere.com), presenting software
 
 ## Current portfolio story
 
-- **LedgerFlow** — completed Java microservice case study with Kafka workflows, PostgreSQL service ownership, Redis, Keycloak, observability, and a React operations console
-- **Tip Tracker** — private native Android product being prepared for Google Play
+- **LedgerFlow** — completed Java microservice case study with Kafka workflows, PostgreSQL service ownership, Redis, Keycloak, observability, a React operations console, documented production boundaries, and release/load-test planning
+- **Tip Tracker** — proprietary native Android earnings product being prepared for Google Play, with a public recruiter-facing engineering showcase at [tip-tracker-showcase](https://github.com/ogzkaann/tip-tracker-showcase)
 - **Frontend systems** — measured React architecture and WebGL-driven product work
-- **AI-assisted products** — local-first RAG, OCR, document extraction, and BYOK workflows
+- **AI-assisted products** — local-first RAG, OCR, document extraction, BYOK workflows, and explicit evidence-integrity design
 - **Games** — Night Soup, Swarm Script, Gladiator Arena, and Schleimer
 - **EN/DE** — locale-aware routes and professional English/German editorial content with `next-intl`
 
@@ -33,6 +33,8 @@ Personal portfolio for [Oguz Kaan Dere](https://okdere.com), presenting software
 - Vercel deployment
 
 Project facts, status, stack, media, and links are centralized in `src/data/projects.ts`. Localized editorial content lives in `messages/en.json` and `messages/de.json`.
+
+The Tip Tracker production repository remains private. The portfolio intentionally links to its public showcase repository, which contains product screenshots, architecture notes, engineering decisions, testing strategy, privacy details, and small illustrative code excerpts without exposing the proprietary source tree.
 
 ## Run locally
 
