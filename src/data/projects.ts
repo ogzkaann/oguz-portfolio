@@ -45,7 +45,7 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
     ],
     links: [
       {
-        kind: "github",
+        kind: "overview",
         href: "https://github.com/ogzkaann/tip-tracker-showcase",
       },
     ],
