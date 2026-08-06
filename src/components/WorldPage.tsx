@@ -1,5 +1,6 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { projects } from "@/data/projects";
+import { physicalOpsCopy } from "@/data/physical-ops-copy";
 import type {
   LocalizedProject,
   ProjectId,
@@ -16,10 +17,19 @@ interface WorldPageProps {
 
 export async function WorldPage({ world, projectIds }: WorldPageProps) {
   const t = await getTranslations("Portfolio");
+  const locale = await getLocale();
   const labels = t.raw("linkLabels") as Record<ProjectLinkKind, string>;
   const statuses = t.raw("statusLabels") as Record<string, string>;
   const [featuredId, ...secondaryIds] = projectIds;
   const featured = projects[featuredId];
+
+  const projectCopy = (id: ProjectId): LocalizedProject => {
+    if (id === "physicalOps") {
+      return physicalOpsCopy[locale === "de" ? "de" : "en"];
+    }
+
+    return t.raw(`projects.${id}`) as LocalizedProject;
+  };
 
   return (
     <main className={`world-page world-page-${world}`}>
@@ -35,7 +45,7 @@ export async function WorldPage({ world, projectIds }: WorldPageProps) {
       <section className="world-feature" aria-label={t(`${world}.featuredLabel`)}>
         <ProjectFeature
           id={featuredId}
-          copy={t.raw(`projects.${featuredId}`) as LocalizedProject}
+          copy={projectCopy(featuredId)}
           labels={labels}
           statusLabel={statuses[featured.status]}
           mediaPriority
@@ -52,7 +62,7 @@ export async function WorldPage({ world, projectIds }: WorldPageProps) {
             <ProjectRow
               key={id}
               id={id}
-              copy={t.raw(`projects.${id}`) as LocalizedProject}
+              copy={projectCopy(id)}
               labels={labels}
               statusLabel={statuses[projects[id].status]}
             />
