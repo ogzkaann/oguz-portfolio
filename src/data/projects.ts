@@ -50,6 +50,31 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
       },
     ],
   },
+  physicalOps: {
+    id: "physicalOps",
+    world: "engineering",
+    status: "documented",
+    stack: [
+      "React",
+      "TypeScript",
+      "Three.js",
+      "React Three Fiber",
+      "Python",
+      "FastAPI",
+      "SimPy",
+      "Playwright",
+    ],
+    links: [
+      {
+        kind: "architecture",
+        href: "https://github.com/ogzkaann/physical-ops-simulator/blob/main/docs/architecture/ARCHITECTURE.md",
+      },
+      {
+        kind: "github",
+        href: "https://github.com/ogzkaann/physical-ops-simulator",
+      },
+    ],
+  },
   weatherShaders: {
     id: "weatherShaders",
     world: "engineering",
@@ -169,6 +194,7 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
 export const engineeringProjectIds: ProjectId[] = [
   "ledgerflow",
   "tipTracker",
+  "physicalOps",
   "weatherShaders",
   "contextApi",
   "germanyPathFinder",

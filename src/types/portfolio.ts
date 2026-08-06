@@ -12,6 +12,7 @@ export type ProjectStatus =
 export type ProjectId =
   | "ledgerflow"
   | "tipTracker"
+  | "physicalOps"
   | "weatherShaders"
   | "contextApi"
   | "germanyPathFinder"
