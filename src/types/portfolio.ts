@@ -18,6 +18,7 @@ export type ProjectId =
   | "germanyPathFinder"
   | "admissionFitChecker"
   | "nightSoup"
+  | "kuryePatronu"
   | "swarmScript"
   | "gladiatorArena"
   | "schleimer";
