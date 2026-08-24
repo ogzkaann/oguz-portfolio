@@ -155,6 +155,19 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
     ],
     links: [],
   },
+  kuryePatronu: {
+    id: "kuryePatronu",
+    world: "games",
+    status: "verticalSlice",
+    stack: [
+      "Godot 4.7",
+      "GDScript",
+      "3D SubViewport",
+      "Offline graph routing",
+      "Data-driven progression",
+    ],
+    links: [],
+  },
   swarmScript: {
     id: "swarmScript",
     world: "games",
@@ -203,6 +216,7 @@ export const engineeringProjectIds: ProjectId[] = [
 
 export const gameProjectIds: ProjectId[] = [
   "nightSoup",
+  "kuryePatronu",
   "swarmScript",
   "gladiatorArena",
   "schleimer",
