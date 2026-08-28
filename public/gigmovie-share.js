@@ -153,10 +153,7 @@
       var file = new File([blob], 'gig-movie-story.png', { type: 'image/png' });
       var shareData = { files: [file], title: getShareTitle() };
 
-      if (
-        navigator.share &&
-        (!navigator.canShare || navigator.canShare(shareData))
-      ) {
+      if (navigator.share && (!navigator.canShare || navigator.canShare(shareData))) {
         await navigator.share(shareData);
         feedback(button, 'Paylaşım ekranı açıldı', 2200);
       } else {
@@ -183,6 +180,19 @@
   }
 
   document.addEventListener('click', function (event) {
+    var close = event.target.closest && event.target.closest('.share-close');
+    if (close) {
+      event.preventDefault();
+      closeShareMenu(close);
+      return;
+    }
+
+    var menuLink = event.target.closest && event.target.closest('.share-popover a');
+    if (menuLink) {
+      closeShareMenu(menuLink);
+      return;
+    }
+
     var copy = event.target.closest && event.target.closest('.share-copy');
     if (copy) {
       event.preventDefault();
