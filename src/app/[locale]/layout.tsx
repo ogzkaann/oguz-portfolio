@@ -3,6 +3,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Barlow_Condensed, Inter } from "next/font/google";
 import type { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/next";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { routing, type Locale } from "@/i18n/routing";
@@ -50,6 +51,7 @@ export default async function LocaleLayout({
           <div id="main-content">{children}</div>
           <SiteFooter />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
