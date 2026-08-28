@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiBookOpen, FiGithub, FiLinkedin, FiYoutube } from "react-icons/fi";
 import { getTranslations } from "next-intl/server";
 import { CvMenu } from "@/components/CvMenu";
 
@@ -9,6 +9,14 @@ export async function SiteFooter() {
     <footer className="site-footer">
       <p>{t("footer")}</p>
       <div>
+        <a href="https://blog.okdere.com" target="_blank" rel="noreferrer">
+          <FiBookOpen aria-hidden="true" />
+          Blog
+        </a>
+        <a href="https://www.youtube.com/@oguzkdere" target="_blank" rel="noreferrer">
+          <FiYoutube aria-hidden="true" />
+          YouTube
+        </a>
         <a href="https://github.com/ogzkaann" target="_blank" rel="noreferrer">
           <FiGithub aria-hidden="true" />
           GitHub
