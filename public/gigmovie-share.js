@@ -36,7 +36,7 @@
         host.indexOf('ggpht.com') !== -1
       ) {
         url.pathname = url.pathname.replace(
-          /\/(?:s\d+|w\d+(?:-h\d+)?(?:-[a-z])?)\//i,
+          /\/(?:s\d+|w\d+(?:-h\d+)?(?:-[a-z]+)?)\//i,
           '/s1600/'
         );
       }
