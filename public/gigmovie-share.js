@@ -15,17 +15,95 @@
     var paragraphs = document.querySelectorAll('.article-body p');
     for (var i = 0; i < paragraphs.length; i += 1) {
       var value = (paragraphs[i].textContent || '').replace(/\s+/g, ' ').trim();
-      if (value.length >= 45) return value.slice(0, 330);
+      if (value.length >= 45) return value.slice(0, 300);
     }
 
     var body = document.querySelector('.article-body');
-    return body ? (body.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 330) : '';
+    return body ? (body.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 300) : '';
+  }
+
+  function normalizeStoryImageUrl(value) {
+    if (!value) return '';
+
+    try {
+      var url = new URL(value, window.location.href);
+      if (url.protocol !== 'https:' && url.protocol !== 'http:') return '';
+
+      var host = url.hostname.toLowerCase();
+      if (
+        host.indexOf('googleusercontent.com') !== -1 ||
+        host.indexOf('blogspot.com') !== -1 ||
+        host.indexOf('ggpht.com') !== -1
+      ) {
+        url.pathname = url.pathname.replace(
+          /\/(?:s\d+|w\d+(?:-h\d+)?(?:-[a-z])?)\//i,
+          '/s1600/'
+        );
+      }
+
+      return url.toString();
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function getLargestSrcsetCandidate(srcset) {
+    if (!srcset) return '';
+
+    var best = '';
+    var bestWidth = 0;
+    srcset.split(',').forEach(function (candidate) {
+      var bits = candidate.trim().split(/\s+/);
+      var url = bits[0] || '';
+      var width = bits[1] && /\d+w/.test(bits[1]) ? parseInt(bits[1], 10) : 0;
+      if (!best || width >= bestWidth) {
+        best = url;
+        bestWidth = width;
+      }
+    });
+    return best;
   }
 
   function getStoryImage() {
-    var image = document.querySelector('.article-body img');
-    if (!image) return '';
-    return image.currentSrc || image.src || '';
+    var image = document.querySelector(
+      '.article-body img, .post-body img, article img, .post img'
+    );
+
+    if (image) {
+      var anchor = image.closest ? image.closest('a') : null;
+      var candidates = [
+        image.getAttribute('data-original-src'),
+        image.getAttribute('data-src'),
+        image.getAttribute('data-original-url'),
+        anchor && anchor.getAttribute('href'),
+        getLargestSrcsetCandidate(image.getAttribute('srcset')),
+        image.currentSrc,
+        image.src,
+        image.getAttribute('src')
+      ];
+
+      for (var i = 0; i < candidates.length; i += 1) {
+        var normalized = normalizeStoryImageUrl(candidates[i]);
+        if (normalized) return normalized;
+      }
+    }
+
+    var metaSelectors = [
+      'meta[property="og:image"]',
+      'meta[property="og:image:secure_url"]',
+      'meta[name="twitter:image"]',
+      'link[rel="image_src"]'
+    ];
+
+    for (var m = 0; m < metaSelectors.length; m += 1) {
+      var node = document.querySelector(metaSelectors[m]);
+      if (!node) continue;
+      var value = node.getAttribute('content') || node.getAttribute('href');
+      var fallback = normalizeStoryImageUrl(value);
+      if (fallback) return fallback;
+    }
+
+    return '';
   }
 
   function feedback(button, message, timeout) {
@@ -139,10 +217,11 @@
     feedback(button, 'Story hazırlanıyor…', 0);
 
     try {
+      var imageUrl = getStoryImage();
       var params = new URLSearchParams({
         title: getShareTitle(),
         excerpt: getStoryExcerpt(),
-        image: getStoryImage(),
+        image: imageUrl,
         url: getShareUrl()
       });
       var endpoint = 'https://okdere.com/api/gigmovie/story?' + params.toString();
