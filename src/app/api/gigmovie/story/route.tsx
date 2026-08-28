@@ -34,7 +34,7 @@ function upgradeBloggerImageUrl(value: string) {
       host.includes("ggpht.com")
     ) {
       url.pathname = url.pathname.replace(
-        /\/(?:s\d+|w\d+(?:-h\d+)?(?:-[a-z])?)\//i,
+        /\/(?:s\d+|w\d+(?:-h\d+)?(?:-[a-z]+)?)\//i,
         "/s1600/",
       );
     }
@@ -63,23 +63,41 @@ async function resolveImageSource(rawValue: string | null) {
     const response = await fetch(upgraded, {
       cache: "force-cache",
       headers: {
-        Accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+        Accept: "image/jpeg,image/png;q=0.9,*/*;q=0.5",
         "User-Agent": "Mozilla/5.0 GigMovieStory/1.0",
       },
     });
 
-    if (!response.ok) return upgraded;
+    if (!response.ok) return "";
 
-    const contentType = response.headers.get("content-type") || "image/jpeg";
-    if (!contentType.startsWith("image/")) return upgraded;
+    const contentType = (response.headers.get("content-type") || "image/jpeg")
+      .split(";")[0]
+      .trim()
+      .toLowerCase();
+    if (contentType !== "image/jpeg" && contentType !== "image/png") return "";
 
     const buffer = Buffer.from(await response.arrayBuffer());
-    if (!buffer.length || buffer.length > 6_000_000) return upgraded;
+    if (!buffer.length || buffer.length > 6_000_000) return "";
 
     return `data:${contentType};base64,${buffer.toString("base64")}`;
   } catch {
-    return upgraded;
+    return "";
   }
+}
+
+function AccentDiamond({ light = false }: { light?: boolean }) {
+  return (
+    <span
+      style={{
+        width: 13,
+        height: 13,
+        display: "flex",
+        flexShrink: 0,
+        transform: "rotate(45deg)",
+        background: light ? "#b14b54" : "#7b2028",
+      }}
+    />
+  );
 }
 
 export async function GET(request: Request) {
@@ -163,14 +181,14 @@ export async function GET(request: Request) {
               top: 62,
               display: "flex",
               alignItems: "center",
-              gap: 14,
+              gap: 16,
               color: "rgba(255,255,255,.96)",
               fontSize: 23,
               fontWeight: 700,
               letterSpacing: 8,
             }}
           >
-            <span style={{ color: "#9d3941", fontSize: 26 }}>✦</span>
+            <AccentDiamond light />
             GIG MOVIE
           </div>
         </div>
@@ -214,7 +232,7 @@ export async function GET(request: Request) {
               color: "#2e2924",
             }}
           >
-            <span style={{ color: "#7b2028", fontSize: 24 }}>✦</span>
+            <AccentDiamond />
             GIG MOVIE
           </div>
 
@@ -358,11 +376,13 @@ export async function GET(request: Request) {
                 justifyContent: "center",
                 background: "#6f1821",
                 color: "white",
-                fontFamily: serifFont ? "GigMovieSerif" : "serif",
-                fontSize: 44,
+                fontFamily: "Arial, sans-serif",
+                fontSize: 24,
+                fontWeight: 700,
+                letterSpacing: 2,
               }}
             >
-              ✎
+              GM
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               <span
@@ -383,7 +403,7 @@ export async function GET(request: Request) {
                   letterSpacing: -0.8,
                 }}
               >
-                blog.okdere.com&nbsp;&nbsp;→
+                blog.okdere.com  &gt;
               </span>
             </div>
           </div>
@@ -400,7 +420,16 @@ export async function GET(request: Request) {
               textTransform: "uppercase",
             }}
           >
-            <span style={{ color: "#7b2028", fontSize: 20 }}>●</span>
+            <span
+              style={{
+                width: 13,
+                height: 13,
+                display: "flex",
+                flexShrink: 0,
+                borderRadius: 99,
+                background: "#7b2028",
+              }}
+            />
             Yeni yazı yayında
           </div>
         </div>
