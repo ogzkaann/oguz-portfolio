@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { routing, type Locale } from "@/i18n/routing";
+import { routing } from "@/i18n/routing";
 import "../globals.css";
 
 const inter = Inter({
@@ -31,7 +31,7 @@ export default async function LocaleLayout({
   params,
 }: Readonly<{
   children: ReactNode;
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
 
