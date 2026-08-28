@@ -11,22 +11,46 @@
     return title && title.textContent ? title.textContent.trim() : document.title;
   }
 
-  function feedback(button, message) {
+  function getStoryExcerpt() {
+    var paragraphs = document.querySelectorAll('.article-body p');
+    for (var i = 0; i < paragraphs.length; i += 1) {
+      var value = (paragraphs[i].textContent || '').replace(/\s+/g, ' ').trim();
+      if (value.length >= 45) return value.slice(0, 330);
+    }
+
+    var body = document.querySelector('.article-body');
+    return body ? (body.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 330) : '';
+  }
+
+  function getStoryImage() {
+    var image = document.querySelector('.article-body img');
+    if (!image) return '';
+    return image.currentSrc || image.src || '';
+  }
+
+  function feedback(button, message, timeout) {
     var wrap = button && button.closest ? button.closest('.article-share-inline') : null;
     var node = wrap ? wrap.querySelector('.share-feedback') : null;
 
     if (node) {
       node.textContent = message;
-      window.setTimeout(function () {
-        node.textContent = '';
-      }, 2200);
+      if (timeout !== 0) {
+        window.setTimeout(function () {
+          node.textContent = '';
+        }, timeout || 2200);
+      }
       return;
     }
 
+    if (!button) return;
+    var original = button.getAttribute('data-original-label') || button.textContent;
+    button.setAttribute('data-original-label', original);
     button.textContent = message;
-    window.setTimeout(function () {
-      button.textContent = 'Linki kopyala';
-    }, 1800);
+    if (timeout !== 0) {
+      window.setTimeout(function () {
+        button.textContent = original;
+      }, timeout || 1800);
+    }
   }
 
   function legacyCopy(text) {
@@ -91,6 +115,73 @@
     copyLink(button);
   }
 
+  function closeShareMenu(button) {
+    var menu = button && button.closest ? button.closest('.share-menu') : null;
+    if (menu) menu.removeAttribute('open');
+  }
+
+  function downloadStory(blob, button) {
+    var objectUrl = URL.createObjectURL(blob);
+    var link = document.createElement('a');
+    link.href = objectUrl;
+    link.download = 'gig-movie-story.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.setTimeout(function () { URL.revokeObjectURL(objectUrl); }, 1500);
+    feedback(button, 'Story görseli kaydedildi', 3000);
+  }
+
+  async function shareInstagramStory(button) {
+    if (button.disabled) return;
+    button.disabled = true;
+    button.classList.add('is-loading');
+    feedback(button, 'Story hazırlanıyor…', 0);
+
+    try {
+      var params = new URLSearchParams({
+        title: getShareTitle(),
+        excerpt: getStoryExcerpt(),
+        image: getStoryImage(),
+        url: getShareUrl()
+      });
+      var endpoint = 'https://okdere.com/api/gigmovie/story?' + params.toString();
+      var response = await fetch(endpoint, { mode: 'cors' });
+      if (!response.ok) throw new Error('Story image request failed');
+
+      var blob = await response.blob();
+      var file = new File([blob], 'gig-movie-story.png', { type: 'image/png' });
+      var shareData = { files: [file], title: getShareTitle() };
+
+      if (
+        navigator.share &&
+        (!navigator.canShare || navigator.canShare(shareData))
+      ) {
+        await navigator.share(shareData);
+        feedback(button, 'Paylaşım ekranı açıldı', 2200);
+      } else {
+        downloadStory(blob, button);
+      }
+    } catch (error) {
+      if (error && error.name === 'AbortError') {
+        feedback(button, '', 1);
+      } else {
+        feedback(button, 'Story açılamadı · görsel açılıyor', 2800);
+        var fallbackParams = new URLSearchParams({
+          title: getShareTitle(),
+          excerpt: getStoryExcerpt(),
+          image: getStoryImage(),
+          url: getShareUrl()
+        });
+        window.open('https://okdere.com/api/gigmovie/story?' + fallbackParams.toString(), '_blank', 'noopener,noreferrer');
+      }
+    } finally {
+      button.disabled = false;
+      button.classList.remove('is-loading');
+      closeShareMenu(button);
+    }
+  }
+
   document.addEventListener('click', function (event) {
     var copy = event.target.closest && event.target.closest('.share-copy');
     if (copy) {
@@ -103,6 +194,13 @@
     if (device) {
       event.preventDefault();
       deviceShare(device);
+      return;
+    }
+
+    var instagram = event.target.closest && event.target.closest('.share-instagram');
+    if (instagram) {
+      event.preventDefault();
+      shareInstagramStory(instagram);
     }
   });
 
