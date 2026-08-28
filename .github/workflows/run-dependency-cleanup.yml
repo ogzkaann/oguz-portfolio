@@ -23,12 +23,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
-      - name: Upgrade to supported Active LTS
+      - name: Set supported dependency versions
         run: |
-          npm install --save-exact next@16.3.3 eslint-config-next@16.3.3 react@19.2.0 react-dom@19.2.0
-          npm install --save-dev eslint@^9 @types/react@^19 @types/react-dom@^19
-          npm audit fix || true
+          npm pkg set 'dependencies.next=16.3.3'
+          npm pkg set 'dependencies.react=19.2.0'
+          npm pkg set 'dependencies.react-dom=19.2.0'
+          npm pkg set 'devDependencies.eslint=^9.0.0'
+          npm pkg set 'devDependencies.eslint-config-next=16.3.3'
+          npm pkg set 'devDependencies.@types/react=^19.0.0'
+          npm pkg set 'devDependencies.@types/react-dom=^19.0.0'
+          rm -rf node_modules package-lock.json
+          npm install
           npm audit fix || true
       - name: Verify production dependency audit
         run: npm audit --omit=dev --audit-level=moderate
