@@ -75,6 +75,22 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
       },
     ],
   },
+  blogOkdere: {
+    id: "blogOkdere",
+    world: "engineering",
+    status: "preProduction",
+    stack: ["Next.js 16", "React 19", "TypeScript", "Supabase", "TipTap", "Vercel"],
+    links: [
+      {
+        kind: "architecture",
+        href: "https://github.com/ogzkaann/blog-okdere/blob/main/docs/architecture.md",
+      },
+      {
+        kind: "github",
+        href: "https://github.com/ogzkaann/blog-okdere",
+      },
+    ],
+  },
   weatherShaders: {
     id: "weatherShaders",
     world: "engineering",
@@ -208,6 +224,7 @@ export const engineeringProjectIds: ProjectId[] = [
   "ledgerflow",
   "tipTracker",
   "physicalOps",
+  "blogOkdere",
   "weatherShaders",
   "contextApi",
   "germanyPathFinder",
