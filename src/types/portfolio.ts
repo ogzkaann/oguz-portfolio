@@ -13,6 +13,7 @@ export type ProjectId =
   | "ledgerflow"
   | "tipTracker"
   | "physicalOps"
+  | "blogOkdere"
   | "weatherShaders"
   | "contextApi"
   | "germanyPathFinder"

@@ -2,6 +2,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { projects } from "@/data/projects";
 import { physicalOpsCopy } from "@/data/physical-ops-copy";
 import { kuryePatronuCopy } from "@/data/kurye-patronu-copy";
+import { blogOkdereCopy } from "@/data/blog-okdere-copy";
 import type {
   LocalizedProject,
   ProjectId,
@@ -31,6 +32,10 @@ export async function WorldPage({ world, projectIds }: WorldPageProps) {
 
     if (id === "kuryePatronu") {
       return kuryePatronuCopy[locale === "de" ? "de" : "en"];
+    }
+
+    if (id === "blogOkdere") {
+      return blogOkdereCopy[locale === "de" ? "de" : "en"];
     }
 
     return t.raw(`projects.${id}`) as LocalizedProject;
