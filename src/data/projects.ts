@@ -83,11 +83,11 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
     links: [
       {
         kind: "architecture",
-        href: "https://github.com/ogzkaann/blog-okdere/blob/main/docs/architecture.md",
+        href: "https://github.com/ogzkaann/blog-okdere-showcase/blob/main/docs/architecture.md",
       },
       {
         kind: "github",
-        href: "https://github.com/ogzkaann/blog-okdere",
+        href: "https://github.com/ogzkaann/blog-okdere-showcase",
       },
     ],
   },
