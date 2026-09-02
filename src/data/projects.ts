@@ -78,9 +78,13 @@ export const projects: Record<ProjectId, ProjectDefinition> = {
   blogOkdere: {
     id: "blogOkdere",
     world: "engineering",
-    status: "preProduction",
+    status: "live",
     stack: ["Next.js 16", "React 19", "TypeScript", "Supabase", "TipTap", "Vercel"],
     links: [
+      {
+        kind: "live",
+        href: "https://blog.okdere.com",
+      },
       {
         kind: "architecture",
         href: "https://github.com/ogzkaann/blog-okdere-showcase/blob/main/docs/architecture.md",
