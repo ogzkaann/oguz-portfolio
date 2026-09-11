@@ -7,7 +7,7 @@ Personal portfolio for [Oguz Kaan Dere](https://okdere.com), presenting software
 - **LedgerFlow** — completed Java microservice case study with Kafka workflows, PostgreSQL service ownership, Redis, Keycloak, observability, a React operations console, documented production boundaries, and release/load-test planning
 - **Tip Tracker** — proprietary native Android earnings product through the pay-control and goals milestone, now being prepared for Google Play, with a public recruiter-facing engineering showcase at [tip-tracker-showcase](https://github.com/ogzkaann/tip-tracker-showcase)
 - **Physical Ops Simulator** — browser-based 3D discrete-event simulation platform through Phase 7, with café operations, workforce constraints, spatial movement/pathfinding, congestion metrics, FastAPI contracts, and deterministic SimPy simulation
-- **blog.okdere** — pre-production Next.js/Supabase editorial platform migration preserving historical Blogger paths, resilient fallback content, controlled authoring/comments, and separately managed production cutover
+- **blog.okdere** — live Next.js/Supabase editorial platform replacement preserving historical Blogger paths, controlled authoring and moderation, first-party reader analytics, contextual character cards, related-reading/RSS continuation, and explicit migration/SEO boundaries
 - **Frontend systems** — measured React architecture and WebGL-driven product work
 - **AI-assisted products** — local-first RAG, OCR, document extraction, BYOK workflows, and explicit evidence-integrity design
 - **Games** — Night Soup, Kurye Patronu, Swarm Script, Gladiator Arena, and Schleimer
